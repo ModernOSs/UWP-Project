@@ -1,7 +1,7 @@
 window.onload = function() {
+    $('#demo').height($(window).height());
     jQuery('#demo').raindrops({
-        canvasWidth: 400,
-        canvasHeight: 400,
+        canvasHeight: $(window).height(),
         waveLength: 100,
         rippleSpeed: 0.05
     });
