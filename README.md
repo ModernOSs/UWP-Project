@@ -32,7 +32,33 @@
     * 点击主界面的右下角小加号进入“目标详情及设定”界面；
     * 更多细节将于之后更新。
 ### 5. 智能提醒
-    * 由小灰灰补充。
+<meta charset="utf-8"/>
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"/>
+<div class="panel panel-default col-xs-6 col-sm-7">
+	<div class="panel-heading">
+		主要按照余额和目标来确定
+	</div>
+	<table class="table">
+		<tr>
+			<td>余额不足20%</td>
+			<td>余额不足20%，要剁手啦(＞﹏＜)</td>
+		</tr>
+		<tr>
+			<td>余额不足40%</td>
+			<td>本月余额还剩40%，要注意节约哦~>_<~ </td>
+		</tr>
+		<tr>
+			<td>目标清单中还有未完成目标</td>
+			<td>目标xx还没完成，去给它攥点钱吧~ + 首项未完成目标链接（可以的话）</td>
+		</tr>
+		<tr>
+			<td>目标清单中无未完成目标</td>
+			<td>目前财务状况良好，给未来买点东西？ + 添加目标链接</td>
+		</tr>
+	</table>
+</div>
 ### 6. 数据类型
 类型名    |属性                             
 ---------|--------------------------------
