@@ -9,16 +9,16 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>03509dce-9bf3-47c8-be42-7cd32ce458b4</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\liuren\Documents\Visual Studio 2015\Projects\Account\Account\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\liuren\Desktop\Account\Account\obj\x86\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\liuren\Documents\Visual Studio 2015\Projects\Account\Account\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\liuren\Documents\Visual Studio 2015\Projects\Account\Account\bin\x86\Debug\Account.exe">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\Account.exe">
       <PackagePath>entrypoint\Account.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
@@ -339,49 +339,52 @@
     <AppxPackagedFile Include="C:\Users\liuren\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Documents\Visual Studio 2015\Projects\Account\Account\ApplicationInsights.config">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Documents\Visual Studio 2015\Projects\Account\Account\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\WaterTank.html">
+      <PackagePath>WaterTank.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Documents\Visual Studio 2015\Projects\Account\Account\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Documents\Visual Studio 2015\Projects\Account\Account\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Documents\Visual Studio 2015\Projects\Account\Account\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Documents\Visual Studio 2015\Projects\Account\Account\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Documents\Visual Studio 2015\Projects\Account\Account\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Documents\Visual Studio 2015\Projects\Account\Account\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Documents\Visual Studio 2015\Projects\Account\Account\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Documents\Visual Studio 2015\Projects\Account\Account\bin\x86\Debug\Account.xr.xml">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\Account.xr.xml">
       <PackagePath>Account.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Documents\Visual Studio 2015\Projects\Account\Account\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Documents\Visual Studio 2015\Projects\Account\Account\bin\x86\Debug\Core\Account.exe">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\Core\Account.exe">
       <PackagePath>Account.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
