@@ -10,28 +10,115 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="440"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
+        <Grid Grid.Row="0" x:Name="waterTankBackground">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="440"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Source="Assets/waterBlue.png" Stretch="Fill"/>
             <WebView Grid.Column="1" Source="ms-appx-web:///WaterTank.html" UseLayoutRounding="True"/>
             <Image Grid.Column="1" Source="Assets/waterTank.png" Stretch="Fill"/>
+            <Grid Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="1" Text="本月剩余" FontSize="20" Height="36" VerticalAlignment="Bottom"/>
+                    <TextBlock Grid.Column="2" Text="600" FontSize="48" Margin="12, 0, 12, 0"/>
+                    <TextBlock Grid.Column="3" Text="元" FontSize="20" Height="36" VerticalAlignment="Bottom"/>
+                </Grid>
+                <Grid Grid.Row="1" Margin="0, 20, 0, 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="1" Text="本月总支出" FontSize="20" Height="36" VerticalAlignment="Bottom"/>
+                    <TextBlock Grid.Column="2" Text="600" FontSize="48" Margin="10, 0, 10, 0"/>
+                    <TextBlock Grid.Column="3" Text="元" FontSize="20" Height="36" VerticalAlignment="Bottom"/>
+                </Grid>
+            </Grid>
+            <Image Grid.Column="2" Source="Assets/waterBlue.png" Stretch="Fill"/>
         </Grid>
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="1" Margin="0, 10, 0, 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" HorizontalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="今日消费" FontSize="20"  HorizontalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Text="86" FontSize="48" HorizontalAlignment="Center"/>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1" Margin="0, 10, 0, 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" HorizontalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="今日消费" FontSize="20"  HorizontalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Text="86" FontSize="48" HorizontalAlignment="Center"/>
+            </Grid>
+            <Border Grid.Column="1" BorderThickness="0,0,2,0" BorderBrush="LightGray" />
+            <Grid Grid.Column="2" HorizontalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="本周消费" FontSize="20"  HorizontalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Text="360" FontSize="48" HorizontalAlignment="Center"/>
+            </Grid>
+            <Border Grid.Column="3" BorderThickness="0,0,2,0" BorderBrush="LightGray" />
+            <Grid Grid.Column="4" HorizontalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="计  划" FontSize="20"  HorizontalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Text="12" FontSize="48" HorizontalAlignment="Center"/>
+            </Grid>
+        </Grid>
+        <MenuFlyoutSeparator Grid.Row="2" VerticalAlignment="Top" Margin="0, 10, 0, 10"/>
+        <Grid Grid.Row="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.05*"/>
                 <ColumnDefinition Width="0.9*"/>
                 <ColumnDefinition Width="0.05*"/>
             </Grid.ColumnDefinitions>
-            <ListView Grid.Column="1">
-                <ListViewItem Content="余额不足20%，要剁手啦"/>
-                <ListViewItem Content="本月余额还剩40%，要注意节约哦"/>
-                <ListViewItem Content="目标 购买自行车 还没完成，去给它攥点钱吧"/>
-            </ListView>
+            <ScrollViewer  Grid.Column="1">
+                <ListView>
+                    <ListViewItem Content="余额不足20%，要剁手啦"/>
+                    <ListViewItem Content="本月余额还剩40%，要注意节约哦"/>
+                    <ListViewItem Content="目标 购买自行车 还没完成，去给它攥点钱吧"/>
+                </ListView>
+            </ScrollViewer>
         </Grid>
     </Grid>
 </Page>
