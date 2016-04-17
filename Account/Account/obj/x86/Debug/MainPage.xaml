@@ -14,7 +14,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0" x:Name="waterTankBackground">
+        <Grid x:ConnectionId='1' Grid.Row="0" x:Name="waterTankBackground">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="440"/>
@@ -122,3 +122,4 @@
         </Grid>
     </Grid>
 </Page>
+

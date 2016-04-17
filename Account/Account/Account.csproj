@@ -110,6 +110,7 @@
     <None Include="Account_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\waterBlue.png" />
     <Content Include="Assets\waterTank.png" />
     <Content Include="WaterTank.html" />
     <Content Include="Properties\Default.rd.xml" />
