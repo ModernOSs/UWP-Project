@@ -342,11 +342,8 @@
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\WaterTank.html">
-      <PackagePath>WaterTank.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\waterTank.png">
+      <PackagePath>Assets\waterTank.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -374,6 +371,12 @@
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\WaterTank.html">
+      <PackagePath>WaterTank.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\Account.xr.xml">
       <PackagePath>Account.xr.xml</PackagePath>
