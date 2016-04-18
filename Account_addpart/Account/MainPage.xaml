@@ -10,48 +10,24 @@
    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*" />
-            <RowDefinition Height="190" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="2*" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="160"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="80"/>
         </Grid.RowDefinitions>
-
-        <Grid Grid.Row="0" Margin="5">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="2*" />
-            </Grid.RowDefinitions>
-            <TextBlock Text="记帐本" Grid.Row="0" FontSize="20" Margin="5"></TextBlock>
-            <Grid Grid.Row= "1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="4*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Border CornerRadius="10" BorderBrush="Gray" BorderThickness="3" Width="270" Grid.Column="0"  HorizontalAlignment="Right">
-                    <TextBox Text="0.00" Grid.Column="0" FontSize="80" HorizontalAlignment="Right" VerticalAlignment="Center" TextAlignment="Right"  BorderThickness="0" Width="270"></TextBox>
-                </Border>
-                <TextBlock Text="元" Grid.Column="1" FontSize="40" VerticalAlignment="Bottom" TextAlignment="Center" Margin="0,0,0,5" ></TextBlock>
-            </Grid>
+        <Grid Grid.Row="0" Margin="12">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="64"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Text="0.00" Grid.Column="0" FontSize="64" TextAlignment="Left" BorderThickness="0" VerticalAlignment="Center"/>
+            <TextBlock Text="元" Grid.Column="1" FontSize="24" TextAlignment="Center" Margin="0,3,0,0" VerticalAlignment="Center"/>
+            <Border Grid.Column="2" BorderThickness="0,0,2,0" BorderBrush="LightGray" />
+            <CalendarDatePicker Margin="24, 0, 12, 0" Grid.Column="3" HorizontalAlignment="Left" FontSize="16" Header="日期"/>
         </Grid>
-
-        <Grid Grid.Row="1" Margin="5" Width="345">
-            <WebView  Source="ms-appx-web:///swiper.html" UseLayoutRounding="True"/>
-        </Grid>
-
-        <Grid Grid.Row="2" Margin="5">
-            <DatePicker Width="350" Height="70" FontSize="15" Header="日期" HorizontalAlignment="Center"  VerticalAlignment="Bottom"></DatePicker>
-        </Grid>
-
-        <Grid Grid.Row="3" Margin="5">
-            <Border CornerRadius="10" BorderBrush="Gray" BorderThickness="3" Width="350" >
-                <TextBox BorderThickness="0" />
-            </Border>
-        </Grid>
-
-        <Grid Grid.Row="4" Margin="5">
-            <Button Content="创   建" HorizontalAlignment="Center" FontStyle="Normal" Click="Button_Click"  Name="create"  Width="75" >
-            </Button>
-        </Grid>
+        <WebView x:Name="swiper" Grid.Row="1" Margin="12, 8, 12, 0" Source="ms-appx-web:///swiper.html" UseLayoutRounding="True"/>
+        <Button Grid.Row="34" Margin="5" Content="创  建" HorizontalAlignment="Center" FontStyle="Normal" Click="Button_Click" Name="create"/>
     </Grid>
 </Page>
