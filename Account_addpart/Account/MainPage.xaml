@@ -15,7 +15,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="80"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0" Margin="12">
+        <Grid Grid.Row="0" Margin="20">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
                 <ColumnDefinition Width="64"/>
@@ -25,9 +25,65 @@
             <TextBox Text="0.00" Grid.Column="0" FontSize="64" TextAlignment="Left" BorderThickness="0" VerticalAlignment="Center"/>
             <TextBlock Text="元" Grid.Column="1" FontSize="24" TextAlignment="Center" Margin="0,3,0,0" VerticalAlignment="Center"/>
             <Border Grid.Column="2" BorderThickness="0,0,2,0" BorderBrush="LightGray" />
-            <CalendarDatePicker Margin="24, 0, 12, 0" Grid.Column="3" HorizontalAlignment="Left" FontSize="16" Header="日期"/>
+            <CalendarDatePicker Margin="24, 0, 12, 0" Grid.Column="3" HorizontalAlignment="Left" FontSize="16" Header="日期"  IsTodayHighlighted="True"/>
         </Grid>
-        <WebView x:Name="swiper" Grid.Row="1" Margin="12, 8, 12, 0" Source="ms-appx-web:///swiper.html" UseLayoutRounding="True"/>
-        <Button Grid.Row="34" Margin="5" Content="创  建" HorizontalAlignment="Center" FontStyle="Normal" Click="Button_Click" Name="create"/>
+
+        <Grid Grid.Row="1" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="90"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.1*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="0.1*"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="1" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
+                    <Button Margin="5" HorizontalAlignment="Center" Width="40" Height="40" FontStyle="Normal" BorderThickness="0" Name="food">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Assets/food.png"/>
+                        </Button.Background>
+                        <Rectangle x:Name="rectangle" RadiusY="30" RadiusX="30" Stroke="Gray" StrokeThickness="2" >
+                        </Rectangle>
+                    </Button>
+                </Border>
+                <Button Style="{StaticResource buttonTemplate}" Grid.Column="2" Margin="5" HorizontalAlignment="Center" FontStyle="Normal" Click="Button_Click" Name="traffic"/>
+                <Button Style="{StaticResource buttonTemplate}" Grid.Column="3" Margin="5" HorizontalAlignment="Center" FontStyle="Normal" Click="Button_Click" Name="shopping"/>
+                <Button Style="{StaticResource buttonTemplate}" Grid.Column="4" Margin="5" HorizontalAlignment="Center" FontStyle="Normal" Click="Button_Click" Name="medical"/>
+                <Button Style="{StaticResource buttonTemplate}" Grid.Column="5" Margin="5" HorizontalAlignment="Center" FontStyle="Normal" Click="Button_Click" Name="education"/>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.1*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="0.1*"/>
+                </Grid.ColumnDefinitions>
+                <Button Style="{StaticResource buttonTemplate}" Grid.Column="1" Margin="5" HorizontalAlignment="Center" FontStyle="Normal" Click="Button_Click" Name="fun"/>
+                <Button Style="{StaticResource buttonTemplate}" Grid.Column="2" Margin="5" HorizontalAlignment="Center" FontStyle="Normal" Click="Button_Click" Name="social"/>
+                <Button Style="{StaticResource buttonTemplate}" Grid.Column="3" Margin="5" HorizontalAlignment="Center" FontStyle="Normal" Click="Button_Click" Name="utilities"/>
+                <Button Style="{StaticResource buttonTemplate}" Grid.Column="4" Margin="5" HorizontalAlignment="Center" FontStyle="Normal" Click="Button_Click" Name="phone"/>
+                <Button Style="{StaticResource buttonTemplate}" Grid.Column="5" Margin="5" HorizontalAlignment="Center" FontStyle="Normal" Click="Button_Click" Name="others"/>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Name="details" Height="200" Margin="30, 30, 30, 20" />
+        </Grid>
+
+        <Button  Grid.Row="3" Margin="5" Background="White" BorderThickness="2" BorderBrush="LightGray" HorizontalAlignment="Center" Height="40" Content="创  建" Width="100" FontStyle="Normal" Click="Button_Click" Name="create"/>
     </Grid>
 </Page>
