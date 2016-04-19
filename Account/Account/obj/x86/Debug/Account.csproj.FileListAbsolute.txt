@@ -390,3 +390,8 @@ C:\Users\liuren\Desktop\Account\Account\obj\x86\Debug\qualifiers.txt.intermediat
 C:\Users\liuren\Desktop\Account\Account\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\liuren\Desktop\Account\Account\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\liuren\Desktop\Account\Account\obj\x86\Debug\Account.csprojResolveAssemblyReference.cache
+C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\GoalsPage.xbf
+C:\Users\liuren\Desktop\Account\Account\obj\x86\Debug\GoalsPage.g.i.cs
+C:\Users\liuren\Desktop\Account\Account\obj\x86\Debug\GoalsPage.g.cs
+C:\Users\liuren\Desktop\Account\Account\obj\x86\Debug\GoalsPage.xaml
+C:\Users\liuren\Desktop\Account\Account\obj\x86\Debug\GoalsPage.xbf
