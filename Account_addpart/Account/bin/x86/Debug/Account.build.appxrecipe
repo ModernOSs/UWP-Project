@@ -9,16 +9,16 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>03509dce-9bf3-47c8-be42-7cd32ce458b4</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\shuqian\Desktop\Account\Account\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\shuqian\Desktop\Account_addpart\Account\obj\x86\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\shuqian\Desktop\Account\Account\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\shuqian\Desktop\Account_addpart\Account\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\bin\x86\Debug\Account.exe">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\bin\x86\Debug\Account.exe">
       <PackagePath>entrypoint\Account.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shuqian\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
@@ -339,61 +339,55 @@
     <AppxPackagedFile Include="C:\Users\shuqian\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\ApplicationInsights.config">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\food.png">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Assets\food.png">
       <PackagePath>Assets\food.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\traffic.png">
-      <PackagePath>Assets\traffic.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\swiper.html">
-      <PackagePath>swiper.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\fen.jpg">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Assets\fen.jpg">
       <PackagePath>Assets\fen.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\bin\x86\Debug\Account.xr.xml">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\bin\x86\Debug\Account.xr.xml">
       <PackagePath>Account.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\bin\x86\Debug\Core\Account.exe">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\bin\x86\Debug\Core\Account.exe">
       <PackagePath>Account.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

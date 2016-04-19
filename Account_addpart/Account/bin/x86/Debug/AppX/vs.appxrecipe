@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>03509dce-9bf3-47c8-be42-7cd32ce458b4</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\shuqian\Desktop\Account\Account\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\shuqian\Desktop\Account_addpart\Account\obj\x86\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>83F37D3E17BFB3C929E0FE45007700EA3316BDD25FC620BDD8BAD9F9210AFFDC</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>03509dce-9bf3-47c8-be42-7cd32ce458b4_1.0.0.0_x86__2t9wp0ffyd37g</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>03509dce-9bf3-47c8-be42-7cd32ce458b4_2t9wp0ffyd37g!App</RegisteredUserModeAppID>
@@ -19,16 +19,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\shuqian\Desktop\Account\Account\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\shuqian\Desktop\Account_addpart\Account\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-17T13:05:35.337</Modified>
+      <Modified>2016-04-19T12:25:00.317</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\bin\x86\Debug\Account.exe">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\bin\x86\Debug\Account.exe">
       <PackagePath>entrypoint\Account.exe</PackagePath>
-      <Modified>2016-04-17T13:01:33.127</Modified>
+      <Modified>2016-04-19T12:24:59.194</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shuqian\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -454,79 +454,71 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-02-26T04:39:14.237</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\ApplicationInsights.config">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
-      <Modified>2016-04-15T13:19:35.000</Modified>
+      <Modified>2016-04-17T13:26:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\food.png">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Assets\food.png">
       <PackagePath>Assets\food.png</PackagePath>
-      <Modified>2016-04-17T12:53:08.531</Modified>
+      <Modified>2016-04-19T09:52:10.735</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\traffic.png">
-      <PackagePath>Assets\traffic.png</PackagePath>
-      <Modified>2016-04-17T13:05:30.593</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2016-04-15T13:19:35.000</Modified>
+      <Modified>2016-04-17T13:26:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-15T13:19:35.000</Modified>
+      <Modified>2016-04-17T13:26:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-15T13:19:35.000</Modified>
+      <Modified>2016-04-17T13:26:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-15T13:19:35.000</Modified>
+      <Modified>2016-04-17T13:26:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-15T13:19:35.000</Modified>
+      <Modified>2016-04-17T13:26:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-15T13:19:35.000</Modified>
+      <Modified>2016-04-17T13:26:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-15T13:19:35.000</Modified>
+      <Modified>2016-04-17T13:26:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\swiper.html">
-      <PackagePath>swiper.html</PackagePath>
-      <Modified>2016-04-17T13:02:42.519</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Assets\fen.jpg">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Assets\fen.jpg">
       <PackagePath>Assets\fen.jpg</PackagePath>
-      <Modified>2016-04-17T10:08:52.529</Modified>
+      <Modified>2016-04-17T13:26:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2016-04-15T13:19:35.000</Modified>
+      <Modified>2016-04-17T13:26:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\bin\x86\Debug\Account.xr.xml">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\bin\x86\Debug\Account.xr.xml">
       <PackagePath>Account.xr.xml</PackagePath>
-      <Modified>2016-04-17T12:48:19.734</Modified>
+      <Modified>2016-04-19T12:24:58.968</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-02-26T05:27:36.690</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-04-17T13:01:33.732</Modified>
+      <Modified>2016-04-19T12:25:00.027</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account\Account\bin\x86\Debug\Core\Account.exe">
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\Account_addpart\Account\bin\x86\Debug\Core\Account.exe">
       <PackagePath>Account.exe</PackagePath>
-      <Modified>2016-04-17T13:05:35.334</Modified>
+      <Modified>2016-04-19T12:25:00.307</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
