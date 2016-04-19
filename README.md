@@ -10,7 +10,7 @@
 <div class="row">
   <div class="col-xs-6 col-sm-3">
       ① 主界面<br />
-      <img src="http://liuren.link/images/main.png" class="img-thumbnail" width = "270" height = "480" alt="主界面" align=center />
+      <img src="http://liuren.link/images/main.jpg" class="img-thumbnail" width = "300" height = "480" alt="主界面" align=center />
   </div>
   <div class="col-xs-6 col-sm-3">
       ② 支出收益详情<br />
@@ -33,7 +33,7 @@
     * 更多细节将于之后更新。
 ### 5. 智能提醒
 条件                   | 提醒
------------------------|-------------------------------------------------------
+-----------------------|-----------------------
 余额不足20%             |余额不足20%，要剁手啦(＞﹏＜)
 余额不足40%             |本月余额还剩40%，要注意节约哦~>_<~ 
 目标清单中还有未完成目标  |目标xx还没完成，去给它攥点钱吧~ + 首项未完成目标链接（可以的话）
