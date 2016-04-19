@@ -8,7 +8,7 @@
     mc:Ignorable="d">
     <Page.BottomAppBar>
         <CommandBar>
-            <AppBarButton x:Name="goalsButton" Icon="OutlineStar" Label="心愿单" Click="goalsButton_Click"/>
+            <AppBarButton x:ConnectionId='1' x:Name="goalsButton" Icon="OutlineStar" Label="心愿单"                          />
         </CommandBar>
     </Page.BottomAppBar>
 
@@ -19,7 +19,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0" x:Name="waterTankBackground">
+        <Grid x:ConnectionId='2' Grid.Row="0" x:Name="waterTankBackground">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="440"/>
@@ -107,3 +107,4 @@
         </Grid>
     </Grid>
 </Page>
+
