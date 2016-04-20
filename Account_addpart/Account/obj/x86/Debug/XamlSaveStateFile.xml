@@ -1,9 +1,1 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-﻿<?xml version="1.0" encoding="utf-8"?><XamlCompilerSaveState><ReferenceAssemblyList /><XamlSourceFileDataList><XamlSourceFileData XamlFileName="App.xaml" ClassFullName="Account.App" XamlFileTimeAtLastCompileInTicks="635966899350038089" HasBoundEventAssignments="False" /><XamlSourceFileData XamlFileName="MainPage.xaml" ClassFullName="Account.MainPage" XamlFileTimeAtLastCompileInTicks="635966942435889094" HasBoundEventAssignments="False" /></XamlSourceFileDataList></XamlCompilerSaveState>
-=======
 ﻿<?xml version="1.0" encoding="utf-8"?><XamlCompilerSaveState><ReferenceAssemblyList /><XamlSourceFileDataList><XamlSourceFileData XamlFileName="App.xaml" ClassFullName="Account.App" XamlFileTimeAtLastCompileInTicks="635966408800000000" HasBoundEventAssignments="False" /><XamlSourceFileData XamlFileName="MainPage.xaml" ClassFullName="Account.MainPage" XamlFileTimeAtLastCompileInTicks="635966980911334761" HasBoundEventAssignments="False" /></XamlSourceFileDataList></XamlCompilerSaveState>
->>>>>>> master
-=======
-﻿<?xml version="1.0" encoding="utf-8"?><XamlCompilerSaveState><ReferenceAssemblyList /><XamlSourceFileDataList><XamlSourceFileData XamlFileName="App.xaml" ClassFullName="Account.App" XamlFileTimeAtLastCompileInTicks="635966408800000000" HasBoundEventAssignments="False" /><XamlSourceFileData XamlFileName="MainPage.xaml" ClassFullName="Account.MainPage" XamlFileTimeAtLastCompileInTicks="635966980911334761" HasBoundEventAssignments="False" /></XamlSourceFileDataList></XamlCompilerSaveState>
->>>>>>> master
