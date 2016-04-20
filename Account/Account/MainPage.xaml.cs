@@ -30,5 +30,10 @@ namespace Account
             viewTitleBar.BackgroundColor = Color.FromArgb(0, 136, 214, 255);
             viewTitleBar.ButtonBackgroundColor = Color.FromArgb(0, 136, 214, 255);
         }
+
+        private void goalsButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(GoalsPage));
+        }
     }
 }
