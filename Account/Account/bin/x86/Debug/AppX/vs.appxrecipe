@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>03509dce-9bf3-47c8-be42-7cd32ce458b4</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\liuren\Desktop\Account\Account\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>83F37D3E17BFB3C929E0FE45007700EA3316BDD25FC620BDD8BAD9F9210AFFDC</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>C2586945BEBEB2BC81166D0A1C5D9E3EA3B27FFEDB4DE3033B4B6440AB6CC38F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>03509dce-9bf3-47c8-be42-7cd32ce458b4_1.0.0.0_x86__2t9wp0ffyd37g</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>03509dce-9bf3-47c8-be42-7cd32ce458b4_2t9wp0ffyd37g!App</RegisteredUserModeAppID>
     <RegisteredPackageID>03509dce-9bf3-47c8-be42-7cd32ce458b4</RegisteredPackageID>
@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-20T13:29:51.269</Modified>
+      <Modified>2016-04-20T15:12:57.068</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\Account.exe">
       <PackagePath>entrypoint\Account.exe</PackagePath>
-      <Modified>2016-04-20T13:29:49.917</Modified>
+      <Modified>2016-04-20T15:12:55.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -454,6 +454,14 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-02-25T00:14:21.582</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\.nuget\packages\WinRTXamlToolkit.Controls.DataVisualization.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization.dll">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization.dll</PackagePath>
+      <Modified>2016-04-20T15:01:01.813</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\.nuget\packages\WinRTXamlToolkit.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit.dll">
+      <PackagePath>WinRTXamlToolkit.dll</PackagePath>
+      <Modified>2016-04-20T15:01:01.852</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
       <Modified>2016-04-18T22:31:02.000</Modified>
@@ -514,19 +522,35 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\Account.xr.xml">
       <PackagePath>Account.xr.xml</PackagePath>
-      <Modified>2016-04-20T13:29:49.657</Modified>
+      <Modified>2016-04-20T15:12:55.452</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-03-12T02:51:10.963</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\.nuget\packages\WinRTXamlToolkit.Controls.DataVisualization.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml</PackagePath>
+      <Modified>2016-04-20T15:01:01.816</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\.nuget\packages\WinRTXamlToolkit.Controls.DataVisualization.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.UWP.rd.xml">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.UWP.rd.xml</PackagePath>
+      <Modified>2016-04-20T15:01:02.027</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\.nuget\packages\WinRTXamlToolkit.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml">
+      <PackagePath>WinRTXamlToolkit\WinRTXamlToolkit.xr.xml</PackagePath>
+      <Modified>2016-04-20T15:01:01.861</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\.nuget\packages\WinRTXamlToolkit.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit\Properties\WinRTXamlToolkit.UWP.rd.xml">
+      <PackagePath>WinRTXamlToolkit\Properties\WinRTXamlToolkit.UWP.rd.xml</PackagePath>
+      <Modified>2016-04-20T15:01:02.160</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-04-20T13:29:50.903</Modified>
+      <Modified>2016-04-20T15:12:56.736</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\Core\Account.exe">
       <PackagePath>Account.exe</PackagePath>
-      <Modified>2016-04-20T13:29:51.263</Modified>
+      <Modified>2016-04-20T15:12:57.053</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
