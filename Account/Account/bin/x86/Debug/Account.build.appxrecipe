@@ -342,8 +342,8 @@
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\goalsPageBackground.png">
-      <PackagePath>Assets\goalsPageBackground.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\example1.png">
+      <PackagePath>Assets\example1.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\waterBlue.png">
       <PackagePath>Assets\waterBlue.png</PackagePath>
