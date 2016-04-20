@@ -35,5 +35,10 @@ namespace Account
         {
             Frame.Navigate(typeof(GoalsPage));
         }
+
+        private void waterTankButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Details));
+        }
     }
 }
