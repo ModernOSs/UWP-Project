@@ -1,0 +1,1 @@
+C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\Account.csproj;x86

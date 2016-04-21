@@ -28,6 +28,8 @@ namespace Account
             var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
             viewTitleBar.BackgroundColor = Windows.UI.Colors.LightGray;
             viewTitleBar.ButtonBackgroundColor = Windows.UI.Colors.LightGray;
+
+            NavigationCacheMode = NavigationCacheMode.Enabled;
         }
     }
 }

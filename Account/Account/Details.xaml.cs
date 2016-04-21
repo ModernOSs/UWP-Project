@@ -38,6 +38,8 @@ namespace Account
         {
             this.InitializeComponent();
             this.Loaded += MainPage_Loaded;
+
+            NavigationCacheMode = NavigationCacheMode.Enabled;
         }
 
         private void LoadChartContents()
@@ -50,6 +52,11 @@ namespace Account
             financialStuffList.Add(new FinancialStuff() { Name = "APR", Amount = rand.Next(0, 200) });
             (PieChart.Series[0] as PieSeries).ItemsSource = financialStuffList;
             (ColumnChart.Series[0] as ColumnSeries).ItemsSource = financialStuffList;
+        }
+
+        private void addNewItemButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AddNewItemPage));
         }
     }
 }
