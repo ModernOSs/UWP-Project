@@ -38,6 +38,8 @@ namespace Account
         {
             this.InitializeComponent();
             this.Loaded += MainPage_Loaded;
+
+            NavigationCacheMode = NavigationCacheMode.Enabled;
         }
 
         private void LoadChartContents()

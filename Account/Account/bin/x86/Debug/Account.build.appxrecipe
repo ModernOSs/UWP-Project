@@ -351,6 +351,9 @@
     <AppxPackagedFile Include="C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\Assets\example1.png">
       <PackagePath>Assets\example1.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\Assets\food.png">
+      <PackagePath>Assets\food.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\Assets\waterBlue.png">
       <PackagePath>Assets\waterBlue.png</PackagePath>
     </AppxPackagedFile>
@@ -383,6 +386,9 @@
     <AppxPackagedFile Include="C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\Assets\fen.jpg">
+      <PackagePath>Assets\fen.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\WaterTank.html">
       <PackagePath>WaterTank.html</PackagePath>

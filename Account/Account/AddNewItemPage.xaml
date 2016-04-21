@@ -80,7 +80,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <TextBox Name="details" Height="200" Margin="30, 30, 30, 20" />
+            <TextBox Name="details" Height="200" Header="描述" Margin="30, 30, 30, 20" />
         </Grid>
 
         <Button  Grid.Row="3" Margin="5" Background="White" BorderThickness="2" BorderBrush="LightGray" HorizontalAlignment="Center" Height="40" Content="创  建" Width="100" FontStyle="Normal" Click="create_Click" Name="create"/>

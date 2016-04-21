@@ -196,6 +196,7 @@ C:\Users\liuren\Documents\Visual Studio 2015\Projects\Account\Account\obj\x86\De
 C:\Users\liuren\Documents\Visual Studio 2015\Projects\Account\Account\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\bin\x86\Debug\ApplicationInsights.config
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\bin\x86\Debug\App.xbf
+C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\bin\x86\Debug\AddNewItemPage.xbf
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\bin\x86\Debug\Details.xbf
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\bin\x86\Debug\GoalsPage.xbf
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\bin\x86\Debug\MainPage.xbf
@@ -315,9 +316,10 @@ C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\bin\x86\Debug\Syste
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\bin\x86\Debug\System.Xml.XmlSerializer.dll
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\bin\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization.dll
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\bin\x86\Debug\WinRTXamlToolkit.dll
-C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\Account.csprojResolveAssemblyReference.cache
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\App.g.i.cs
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\App.g.cs
+C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\AddNewItemPage.g.i.cs
+C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\AddNewItemPage.g.cs
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\Details.g.i.cs
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\Details.g.cs
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\GoalsPage.g.i.cs
@@ -329,10 +331,12 @@ C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\App.x
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\Details.xaml
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\GoalsPage.xaml
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\MainPage.xaml
+C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\AddNewItemPage.xaml
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\App.xbf
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\Details.xbf
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\GoalsPage.xbf
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\MainPage.xbf
+C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\AddNewItemPage.xbf
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\XamlSaveStateFile.xml
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\Account.exe
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\Account.pdb
@@ -408,8 +412,4 @@ C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\resou
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization.pri.xml
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\WinRTXamlToolkit.pri.xml
 C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\ProjectArchitectures.txt
-C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\bin\x86\Debug\AddNewItemPage.xbf
-C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\AddNewItemPage.g.i.cs
-C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\AddNewItemPage.g.cs
-C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\AddNewItemPage.xaml
-C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\AddNewItemPage.xbf
+C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\obj\x86\Debug\Account.csprojResolveAssemblyReference.cache

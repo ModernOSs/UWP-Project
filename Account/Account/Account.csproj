@@ -120,6 +120,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\example1.png" />
+    <Content Include="Assets\fen.jpg" />
+    <Content Include="Assets\food.png" />
     <Content Include="Assets\waterBlue.png" />
     <Content Include="Assets\waterTank.png" />
     <Content Include="WaterTank.html" />

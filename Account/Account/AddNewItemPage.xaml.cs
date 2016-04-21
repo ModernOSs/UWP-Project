@@ -25,6 +25,8 @@ namespace Account
         public AddNewItemPage()
         {
             this.InitializeComponent();
+
+            NavigationCacheMode = NavigationCacheMode.Enabled;
         }
 
         private void others_Click(object sender, RoutedEventArgs e)
