@@ -40,5 +40,6 @@ namespace Account
         {
             Frame.Navigate(typeof(Details));
         }
+
     }
 }

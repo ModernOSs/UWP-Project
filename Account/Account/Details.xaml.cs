@@ -51,5 +51,10 @@ namespace Account
             (PieChart.Series[0] as PieSeries).ItemsSource = financialStuffList;
             (ColumnChart.Series[0] as ColumnSeries).ItemsSource = financialStuffList;
         }
+
+        private void addNewItemButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AddNewItemPage));
+        }
     }
 }
