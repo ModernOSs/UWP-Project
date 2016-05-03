@@ -158,6 +158,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalScrollBarVisibility" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
       <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
@@ -179,6 +180,13 @@
       <RootProperty Name="IsSelectionEnabled" />
     </RootType>
     <RootType FullName="Account.Details" />
+    <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Symbol" />
+    </RootType>
     <RootType FullName="Account.GoalsPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.MenuFlyoutSeparator">
       <RootProperty Name="VerticalAlignment" />
