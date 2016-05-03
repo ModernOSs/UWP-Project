@@ -48,7 +48,8 @@
 收入list类|收入list，总收入                  
 支出list类|支出list，总支出                  
 目标list类|目标list                         
-用户类    |3个list类(收入，支出，目标)，用户名  
+用户类    |3个list类(收入，支出，目标)，用户名
+![结构图](http://liuren.link/images/structure.png)
 
 ## 二、规范
 ### 1. 变量名尽量用英语全称
