@@ -21,6 +21,7 @@
   </Dependencies>
   <Resources>
     <Resource Language="ZH-CN" />
+    <Resource Language="EN-US" />
   </Resources>
   <Applications>
     <Application Id="App" Executable="Account.exe" EntryPoint="Account.App">

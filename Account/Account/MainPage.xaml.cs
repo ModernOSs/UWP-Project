@@ -26,6 +26,7 @@ namespace Account
         public MainPage()
         {
             this.InitializeComponent();
+<<<<<<< HEAD
             var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
             viewTitleBar.BackgroundColor = Color.FromArgb(0, 136, 214, 255);
             viewTitleBar.ButtonBackgroundColor = Color.FromArgb(0, 136, 214, 255);
@@ -34,6 +35,23 @@ namespace Account
         private void goalsButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(GoalsPage));
+=======
+            NavigationCacheMode = NavigationCacheMode.Enabled;
+            var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
+            viewTitleBar.BackgroundColor = Color.FromArgb(0, 136, 214, 255);
+            viewTitleBar.ButtonBackgroundColor = Color.FromArgb(0, 136, 214, 255);
+>>>>>>> master
         }
+
+        private void goalsButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(GoalsPage));
+        }
+
+        private void waterTankButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Details));
+        }
+
     }
 }

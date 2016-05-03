@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>03509dce-9bf3-47c8-be42-7cd32ce458b4</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\liuren\Desktop\Account\Account\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>83F37D3E17BFB3C929E0FE45007700EA3316BDD25FC620BDD8BAD9F9210AFFDC</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>C2586945BEBEB2BC81166D0A1C5D9E3EA3B27FFEDB4DE3033B4B6440AB6CC38F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>03509dce-9bf3-47c8-be42-7cd32ce458b4_1.0.0.0_x86__2t9wp0ffyd37g</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>03509dce-9bf3-47c8-be42-7cd32ce458b4_2t9wp0ffyd37g!App</RegisteredUserModeAppID>
     <RegisteredPackageID>03509dce-9bf3-47c8-be42-7cd32ce458b4</RegisteredPackageID>
@@ -22,13 +22,21 @@
     <AppXManifest Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+<<<<<<< HEAD
       <Modified>2016-04-18T15:42:49.498</Modified>
+=======
+      <Modified>2016-05-03T15:05:57.130</Modified>
+>>>>>>> master
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\Account.exe">
       <PackagePath>entrypoint\Account.exe</PackagePath>
+<<<<<<< HEAD
       <Modified>2016-04-18T15:42:48.545</Modified>
+=======
+      <Modified>2016-05-03T15:05:56.515</Modified>
+>>>>>>> master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -454,10 +462,19 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-02-25T00:14:21.582</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\.nuget\packages\WinRTXamlToolkit.Controls.DataVisualization.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization.dll">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization.dll</PackagePath>
+      <Modified>2016-04-20T15:01:01.813</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\.nuget\packages\WinRTXamlToolkit.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit.dll">
+      <PackagePath>WinRTXamlToolkit.dll</PackagePath>
+      <Modified>2016-04-20T15:01:01.852</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
-      <Modified>2016-04-12T11:39:46.000</Modified>
+      <Modified>2016-04-18T22:31:02.000</Modified>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\goalsPageBackground.png">
       <PackagePath>Assets\goalsPageBackground.png</PackagePath>
       <Modified>2016-04-18T15:42:13.000</Modified>
@@ -469,40 +486,69 @@
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\waterTank.png">
       <PackagePath>Assets\waterTank.png</PackagePath>
       <Modified>2016-04-17T13:39:16.000</Modified>
+=======
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\example1.png">
+      <PackagePath>Assets\example1.png</PackagePath>
+      <Modified>2016-04-20T13:27:13.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\food.png">
+      <PackagePath>Assets\food.png</PackagePath>
+      <Modified>2016-04-22T16:16:03.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\waterBlue.png">
+      <PackagePath>Assets\waterBlue.png</PackagePath>
+      <Modified>2016-04-18T22:31:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\waterTank.png">
+      <PackagePath>Assets\waterTank.png</PackagePath>
+      <Modified>2016-04-18T22:31:02.000</Modified>
+>>>>>>> master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2015-09-20T08:22:50.000</Modified>
+      <Modified>2016-04-18T22:31:02.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-20T08:22:50.000</Modified>
+      <Modified>2016-04-18T22:31:02.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-20T08:22:50.000</Modified>
+      <Modified>2016-04-18T22:31:02.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-20T08:22:50.000</Modified>
+      <Modified>2016-04-18T22:31:02.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-20T08:22:50.000</Modified>
+      <Modified>2016-04-18T22:31:02.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-20T08:22:50.000</Modified>
+      <Modified>2016-04-18T22:31:02.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-20T08:22:50.000</Modified>
+      <Modified>2016-04-18T22:31:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\fen.jpg">
+      <PackagePath>Assets\fen.jpg</PackagePath>
+      <Modified>2016-04-22T16:16:03.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\WaterTank.html">
+      <PackagePath>WaterTank.html</PackagePath>
+      <Modified>2016-04-18T22:31:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2016-04-18T22:31:02.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\WaterTank.html">
       <PackagePath>WaterTank.html</PackagePath>
@@ -514,19 +560,47 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\Account.xr.xml">
       <PackagePath>Account.xr.xml</PackagePath>
+<<<<<<< HEAD
       <Modified>2016-04-18T15:42:48.369</Modified>
+=======
+      <Modified>2016-05-03T15:02:01.570</Modified>
+>>>>>>> master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-03-12T02:51:10.963</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\.nuget\packages\WinRTXamlToolkit.Controls.DataVisualization.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml</PackagePath>
+      <Modified>2016-04-20T15:01:01.816</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\.nuget\packages\WinRTXamlToolkit.Controls.DataVisualization.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.UWP.rd.xml">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.UWP.rd.xml</PackagePath>
+      <Modified>2016-04-20T15:01:02.027</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\.nuget\packages\WinRTXamlToolkit.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml">
+      <PackagePath>WinRTXamlToolkit\WinRTXamlToolkit.xr.xml</PackagePath>
+      <Modified>2016-04-20T15:01:01.861</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\.nuget\packages\WinRTXamlToolkit.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit\Properties\WinRTXamlToolkit.UWP.rd.xml">
+      <PackagePath>WinRTXamlToolkit\Properties\WinRTXamlToolkit.UWP.rd.xml</PackagePath>
+      <Modified>2016-04-20T15:01:02.160</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
+<<<<<<< HEAD
       <Modified>2016-04-18T15:42:49.230</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\Core\Account.exe">
       <PackagePath>Account.exe</PackagePath>
       <Modified>2016-04-18T15:42:49.494</Modified>
+=======
+      <Modified>2016-05-03T15:05:56.962</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\Core\Account.exe">
+      <PackagePath>Account.exe</PackagePath>
+      <Modified>2016-05-03T15:05:57.125</Modified>
+>>>>>>> master
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
