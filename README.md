@@ -1,8 +1,8 @@
-# 现代操作系统期中Project
+# 现代操作系统期中Project ~
 
 ## 一、应用设计
 ### 1. 应用名
-    钱柜（暂定）。
+    钱柜
 ### 2. 功能概述
     大致上的功能有两条，一是对用户每月的支出和收入进行管理，二是用户可以设定一些目标，应用会督促你去完成。
 ### 3. 界面
@@ -10,19 +10,19 @@
 <div class="row">
   <div class="col-xs-6 col-sm-3">
       ① 主界面<br />
-      <img src="http://liuren.link/images/main.jpg" class="img-thumbnail" width = "300" height = "480" alt="主界面" align=center />
+      <img src="http://liuren.link/github/main.png" class="img-thumbnail" width = "300" height = "480" alt="主界面" align=center />
   </div>
   <div class="col-xs-6 col-sm-3">
       ② 支出收益详情<br />
-      <img src="http://liuren.link/images/expence.png" class="img-thumbnail" width = "270" height = "480" alt="主界面" align=center />
+      <img src="http://liuren.link/github/expence.png" class="img-thumbnail" width = "300" height = "480" alt="主界面" align=center />
   </div>
   <div class="col-xs-6 col-sm-3">
       ③ 添加支出收益<br />
-      <img src="http://liuren.link/images/add.png" class="img-thumbnail" width = "270" height = "480" alt="主界面" align=center />
+      <img src="http://liuren.link/github/add.png" class="img-thumbnail" width = "300" height = "480" alt="主界面" align=center />
   </div>
   <div class="col-xs-6 col-sm-3">
       ④ 目标详情及设定<br />
-      <img src="http://liuren.link/images/goal.png" class="img-thumbnail" width = "270" height = "480" alt="主界面" align=center />
+      <img src="http://liuren.link/github/goal.png" class="img-thumbnail" width = "300" height = "480" alt="主界面" align=center />
   </div>
 </div>
 ### 4. 操作逻辑
@@ -48,7 +48,8 @@
 收入list类|收入list，总收入                  
 支出list类|支出list，总支出                  
 目标list类|目标list                         
-用户类    |3个list类(收入，支出，目标)，用户名  
+用户类    |3个list类(收入，支出，目标)，用户名
+<img src="http://liuren.link/images/structure.png" class="img-thumbnail" width = "300" height = "350" alt="结构图" align=center />
 
 ## 二、规范
 ### 1. 变量名尽量用英语全称
