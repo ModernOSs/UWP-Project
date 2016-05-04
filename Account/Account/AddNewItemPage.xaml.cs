@@ -25,8 +25,18 @@ namespace Account
         public AddNewItemPage()
         {
             this.InitializeComponent();
-
+            var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
+            viewTitleBar.BackgroundColor = Windows.UI.Colors.LightGray;
+            viewTitleBar.ButtonBackgroundColor = Windows.UI.Colors.LightGray;
             NavigationCacheMode = NavigationCacheMode.Enabled;
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            // 改回顶栏的颜色
+            var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
+            viewTitleBar.BackgroundColor = Windows.UI.Colors.LightGray;
+            viewTitleBar.ButtonBackgroundColor = Windows.UI.Colors.LightGray;
         }
 
         private void others_Click(object sender, RoutedEventArgs e)

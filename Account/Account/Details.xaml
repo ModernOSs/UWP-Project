@@ -98,7 +98,7 @@
         </Grid>
 
         <ScrollViewer Grid.Row="2">
-            <ListView Margin="30, 0" ItemsSource="{x:Bind viewmodel.AllIncomes}">
+            <ListView Margin="30, 0" ItemsSource="{x:Bind incomesList.AllIncomes}">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="md:Incomes">
                         <Grid Height="80">
@@ -121,7 +121,16 @@
                                     <RowDefinition Height="2*"/>
                                     <RowDefinition Height="*"/>
                                 </Grid.RowDefinitions>
-                                <TextBlock Grid.Row="0" Text="花费100元" VerticalAlignment="Center"/>
+                                <Grid Grid.Row="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" Text="花费" VerticalAlignment="Center"/>
+                                    <TextBlock Grid.Column="1" Text="{x:Bind amount}" VerticalAlignment="Center"/>
+                                    <TextBlock Grid.Column="2" Text="元" VerticalAlignment="Center"/>
+                                </Grid>
                                 <TextBlock Grid.Row="1" Text="{x:Bind source}"  VerticalAlignment="Center"/>
                             </Grid>
                         </Grid>

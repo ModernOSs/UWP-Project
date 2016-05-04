@@ -32,7 +32,15 @@ namespace Account
             viewTitleBar.ButtonBackgroundColor = Color.FromArgb(0, 136, 214, 255);
 
             // 获取到全局的user
-            //Models.User user = App.user;
+            // Models.User user = App.user;
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            // 改回顶栏的颜色
+            var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
+            viewTitleBar.BackgroundColor = Color.FromArgb(0, 136, 214, 255);
+            viewTitleBar.ButtonBackgroundColor = Color.FromArgb(0, 136, 214, 255);
         }
 
         private void goalsButton_Click(object sender, RoutedEventArgs e)
