@@ -10,19 +10,19 @@
 <div class="row">
   <div class="col-xs-6 col-sm-3">
       ① 主界面<br />
-      <img src="http://liuren.link/images/main.jpg" class="img-thumbnail" width = "300" height = "480" alt="主界面" align=center />
+      <img src="http://liuren.link/images/main.png" class="img-thumbnail" width = "300" height = "480" alt="主界面" align=center />
   </div>
   <div class="col-xs-6 col-sm-3">
       ② 支出收益详情<br />
-      <img src="http://liuren.link/images/expence.png" class="img-thumbnail" width = "270" height = "480" alt="主界面" align=center />
+      <img src="http://liuren.link/images/expence.jpg" class="img-thumbnail" width = "270" height = "480" alt="主界面" align=center />
   </div>
   <div class="col-xs-6 col-sm-3">
       ③ 添加支出收益<br />
-      <img src="http://liuren.link/images/add.png" class="img-thumbnail" width = "270" height = "480" alt="主界面" align=center />
+      <img src="http://liuren.link/images/add.jpg" class="img-thumbnail" width = "270" height = "480" alt="主界面" align=center />
   </div>
   <div class="col-xs-6 col-sm-3">
       ④ 目标详情及设定<br />
-      <img src="http://liuren.link/images/goal.png" class="img-thumbnail" width = "270" height = "480" alt="主界面" align=center />
+      <img src="http://liuren.link/images/goal.jpg" class="img-thumbnail" width = "270" height = "480" alt="主界面" align=center />
   </div>
 </div>
 ### 4. 操作逻辑
