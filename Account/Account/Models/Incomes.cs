@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Account.Models
 {
-    class Incomes
+    public class Incomes
     {
-        private int id;
+        public int id;
         public string source;
-        private double amount;
-        private DateTimeOffset date;
+        public double amount;
+        public DateTimeOffset date;
 
         public Incomes(int id, string source, double amount, DateTimeOffset date)
         {
@@ -19,11 +19,6 @@ namespace Account.Models
             this.source = source;
             this.amount = amount;
             this.date = date;
-        }
-
-        public int getId()
-        {
-            return id;
         }
     }
 }

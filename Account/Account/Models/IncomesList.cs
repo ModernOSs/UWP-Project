@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Account.Models
 {
-    class IncomesList
+    public class IncomesList
     {
         private ObservableCollection<Incomes> allIncomes = new ObservableCollection<Incomes>();
         private int incomesCount;
@@ -16,8 +16,6 @@ namespace Account.Models
         public IncomesList()
         {
             incomesCount = 0;
-            for (int i = 0; i < 5; i++)
-                addIncome("火锅", 100, new DateTime(2001, 4, 8));
         }
 
         public void addIncome(string source, double amount, DateTimeOffset date)
@@ -30,7 +28,7 @@ namespace Account.Models
         {
             for (int i = 0; i < AllIncomes.Count; i++)
             {
-                if (AllIncomes.ToArray()[i].getId() == id)
+                if (AllIncomes.ToArray()[i].id == id)
                 {
                     AllIncomes.RemoveAt(i);
                     break;

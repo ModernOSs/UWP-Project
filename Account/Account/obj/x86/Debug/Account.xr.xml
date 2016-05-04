@@ -24,6 +24,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
       <RootProperty Name="Template" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="Background" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="Margin" />
@@ -163,10 +164,17 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="Margin" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemTemplate" />
       <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart">
       <RootProperty Name="Series" />
+      <RootProperty Name="Palette" />
     </RootType>
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries">
       <RootProperty Name="IndependentValuePath" />
@@ -175,9 +183,22 @@
       <RootProperty Name="Title" />
     </RootType>
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.PieSeries">
+      <RootProperty Name="Title" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="IndependentValuePath" />
       <RootProperty Name="DependentValuePath" />
       <RootProperty Name="IsSelectionEnabled" />
+    </RootType>
+    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.ResourceDictionaryCollection" />
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary" />
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Shape">
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="StrokeMiterLimit" />
+      <RootProperty Name="Fill" />
     </RootType>
     <RootType FullName="Account.Details" />
     <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
