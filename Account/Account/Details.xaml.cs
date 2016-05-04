@@ -23,6 +23,8 @@ namespace Account
     /// </summary>
     public sealed partial class Details : Page
     {
+        Models.IncomesList viewmodel { set; get; }
+
         public class FinancialStuff
         {
             public string Name { get; set; }
@@ -38,6 +40,7 @@ namespace Account
         {
             this.InitializeComponent();
             this.Loaded += MainPage_Loaded;
+            this.viewmodel = new Models.IncomesList();
             NavigationCacheMode = NavigationCacheMode.Enabled;
         }
 

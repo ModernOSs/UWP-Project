@@ -32,7 +32,7 @@ namespace Account
             viewTitleBar.ButtonBackgroundColor = Color.FromArgb(0, 136, 214, 255);
 
             // 获取到全局的user
-            Models.User user = App.user;
+            //Models.User user = App.user;
         }
 
         private void goalsButton_Click(object sender, RoutedEventArgs e)
