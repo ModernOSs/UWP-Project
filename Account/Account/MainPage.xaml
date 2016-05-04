@@ -28,10 +28,7 @@
             <Image Grid.Column="0" Source="Assets/waterBlue.png" Stretch="Fill"/>
             <WebView Grid.Column="1" Source="ms-appx-web:///WaterTank.html" UseLayoutRounding="True"/>
             <Image Grid.Column="1" Source="Assets/waterTank.png" Stretch="Fill"/>
-<<<<<<< HEAD
-=======
             <Button x:Name="waterTankButton" Grid.Column="1" HorizontalAlignment="Center" Width="300" Height="300" Opacity="0" Click="waterTankButton_Click"/>
->>>>>>> master
             <Grid Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
