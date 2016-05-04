@@ -50,7 +50,8 @@
 目标list类|目标list                         
 用户类    |3个list类(收入，支出，目标)，用户名
 <img src="http://liuren.link/images/structure.png" class="img-thumbnail" width = "300" height = "350" alt="结构图" align=center />
-    * 先考虑合并支出和收入类，大体结构不变
+
+先考虑合并支出和收入类，大体结构不变
 
 ## 二、规范
 ### 1. 变量名尽量用英语全称
