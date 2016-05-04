@@ -16,6 +16,8 @@ namespace Account.Models
         public IncomesList()
         {
             incomesCount = 0;
+            for (int i = 0; i < 5; i++)
+                addIncome("火锅", 100, new DateTime(2001, 4, 8));
         }
 
         public void addIncome(string source, double amount, DateTimeOffset date)
