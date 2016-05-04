@@ -9,6 +9,13 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
+<<<<<<< HEAD
+            <RowDefinition Height="320"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Background="LightGray" />
+        <Image Source="Assets/goalsPageBackground.png" Stretch="Fill"/>
+=======
             <RowDefinition Height="200"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
@@ -62,5 +69,6 @@
                 <Image Grid.Column="2" Source="Assets/example1.png" Stretch="Fill"/>
             </Grid>
         </ScrollViewer>
+>>>>>>> master
     </Grid>
 </Page>

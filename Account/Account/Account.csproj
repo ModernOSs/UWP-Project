@@ -101,9 +101,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
     <Compile Include="Details.xaml.cs">
       <DependentUpon>Details.xaml</DependentUpon>
     </Compile>
+>>>>>>> master
     <Compile Include="GoalsPage.xaml.cs">
       <DependentUpon>GoalsPage.xaml</DependentUpon>
     </Compile>
@@ -112,6 +115,7 @@
     </Compile>
     <Compile Include="Models\Incomes.cs" />
     <Compile Include="Models\IncomesList.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -121,9 +125,13 @@
     <None Include="Account_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <Content Include="Assets\goalsPageBackground.png" />
+=======
     <Content Include="Assets\example1.png" />
     <Content Include="Assets\fen.jpg" />
     <Content Include="Assets\food.png" />
+>>>>>>> master
     <Content Include="Assets\waterBlue.png" />
     <Content Include="Assets\waterTank.png" />
     <Content Include="WaterTank.html" />
@@ -141,6 +149,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+<<<<<<< HEAD
+=======
     <Page Include="AddNewItemPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -149,6 +159,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+>>>>>>> master
     <Page Include="GoalsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

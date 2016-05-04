@@ -1,8 +1,8 @@
-# 现代操作系统期中Project
+# 现代操作系统期中Project ~
 
 ## 一、应用设计
 ### 1. 应用名
-    钱柜（暂定）。
+    钱柜
 ### 2. 功能概述
     大致上的功能有两条，一是对用户每月的支出和收入进行管理，二是用户可以设定一些目标，应用会督促你去完成。
 ### 3. 界面
@@ -48,7 +48,8 @@
 收入list类|收入list，总收入                  
 支出list类|支出list，总支出                  
 目标list类|目标list                         
-用户类    |3个list类(收入，支出，目标)，用户名  
+用户类    |3个list类(收入，支出，目标)，用户名
+<img src="http://liuren.link/images/structure.png" class="img-thumbnail" width = "300" height = "350" alt="结构图" align=center />
 
 ## 二、规范
 ### 1. 变量名尽量用英语全称
