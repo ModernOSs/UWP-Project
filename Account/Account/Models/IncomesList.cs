@@ -10,8 +10,13 @@ namespace Account.Models
     class IncomesList
     {
         private ObservableCollection<Incomes> allIncomes = new ObservableCollection<Incomes>();
-        private int incomesCount = 0;
+        private int incomesCount;
         public ObservableCollection<Incomes> AllIncomes { get { return allIncomes; } set { allIncomes = value; } }
+
+        public IncomesList()
+        {
+            incomesCount = 0;
+        }
 
         public void addIncome(string source, double amount, DateTimeOffset date)
         {
