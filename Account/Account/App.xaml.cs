@@ -28,7 +28,7 @@ namespace Account
         /// 已执行，逻辑上等同于 main() 或 WinMain()。
         /// </summary>
 
-        public static Models.User user = new Models.User("modern OSs", "123456");
+        public static Models.User user = null;
 
         public App()
         {
