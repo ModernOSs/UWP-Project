@@ -9,7 +9,7 @@ app.post('/', function (req, res) {
   if (req.headers.username == "shuqianqian" && req.headers.password == "123456")
     res.send('success');
   else
-    res.send('failed');
+    res.send('fail');
 });
 
 var server = app.listen(3000, function () {
