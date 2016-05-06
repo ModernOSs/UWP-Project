@@ -29,7 +29,12 @@ namespace Account
             viewTitleBar.BackgroundColor = Windows.UI.Colors.LightGray;
             viewTitleBar.ButtonBackgroundColor = Windows.UI.Colors.LightGray;
             NavigationCacheMode = NavigationCacheMode.Enabled;
+
+            GoalsList = new Models.GoalsList();
         }
+
+        private Models.GoalsList GoalsList { set; get; }
+
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
@@ -37,6 +42,16 @@ namespace Account
             var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
             viewTitleBar.BackgroundColor = Windows.UI.Colors.LightGray;
             viewTitleBar.ButtonBackgroundColor = Windows.UI.Colors.LightGray;
+        }
+
+        private void addGoalButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AddGoal), GoalsList);
+        }
+
+        private void goalList_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            
         }
     }
 }

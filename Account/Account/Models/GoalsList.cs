@@ -4,24 +4,26 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace Account.Models
 {
     public class GoalsList
     {
         private ObservableCollection<Goal> allGoals = new ObservableCollection<Goal>();
-        private int goalsCount;
         public ObservableCollection<Goal> AllGoals { get { return allGoals; } set { allGoals = value; } }
+
+        public Models.Goal selectedGoal;
+
 
         public GoalsList()
         {
-            this.goalsCount = 0;
+
         }
 
-        public void addGoal(string name, double price, DateTimeOffset dueTime, string description)
+        public void addGoal(string name, double price, DateTimeOffset dueTime, string description, string imageName, BitmapImage bitmapImageSource)
         {
-            AllGoals.Add(new Goal(name, price, dueTime, description));
-            goalsCount++;
+            AllGoals.Add(new Goal(name, price, dueTime, description, imageName, bitmapImageSource));
         }
 
         public void removeGoal(string id)

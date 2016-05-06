@@ -95,6 +95,9 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddGoal.xaml.cs">
+      <DependentUpon>AddGoal.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AddNewItemPage.xaml.cs">
       <DependentUpon>AddNewItemPage.xaml</DependentUpon>
     </Compile>
@@ -124,6 +127,7 @@
     <None Include="Account_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\default.jpg" />
     <Content Include="Assets\example1.png" />
     <Content Include="Assets\fen.jpg" />
     <Content Include="Assets\food.png" />
@@ -144,6 +148,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AddGoal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AddNewItemPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
