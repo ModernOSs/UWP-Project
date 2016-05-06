@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Account.Models
 {
-    class Goal
+    public class Goal
     {
         private string id;
         private string name;

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Account.Models
 {
-    class GoalsList
+    public class GoalsList
     {
         private ObservableCollection<Goal> allGoals = new ObservableCollection<Goal>();
         private int goalsCount;

@@ -23,6 +23,8 @@ namespace Account
     /// </summary>
     public sealed partial class Details : Page
     {
+        Models.IncomesList incomesList { set; get; }
+
         public class FinancialStuff
         {
             public string Name { get; set; }
@@ -38,7 +40,19 @@ namespace Account
         {
             this.InitializeComponent();
             this.Loaded += MainPage_Loaded;
+            this.incomesList = App.user.incomesList;
             NavigationCacheMode = NavigationCacheMode.Enabled;
+            var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
+            viewTitleBar.BackgroundColor = Windows.UI.Colors.LightGray;
+            viewTitleBar.ButtonBackgroundColor = Windows.UI.Colors.LightGray;
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            // 改回顶栏的颜色
+            var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
+            viewTitleBar.BackgroundColor = Windows.UI.Colors.LightGray;
+            viewTitleBar.ButtonBackgroundColor = Windows.UI.Colors.LightGray;
         }
 
         private void LoadChartContents()

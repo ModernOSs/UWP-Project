@@ -10,7 +10,7 @@ namespace Account.Models
     {
         private string username;
         private string password;
-        private IncomesList incomesList;
+        public IncomesList incomesList;
         // 加入其它list类
 
         public User(string username, string password)
