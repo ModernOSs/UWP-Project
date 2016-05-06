@@ -32,7 +32,12 @@ namespace Account
             var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
             viewTitleBar.BackgroundColor = Color.FromArgb(0, 136, 214, 255);
             viewTitleBar.ButtonBackgroundColor = Color.FromArgb(0, 136, 214, 255);
+
+
+            GoalsList = new Models.GoalsList();
         }
+
+        private Models.GoalsList GoalsList { set; get; }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
