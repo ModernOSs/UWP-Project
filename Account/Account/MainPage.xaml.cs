@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -31,8 +33,18 @@ namespace Account
             viewTitleBar.BackgroundColor = Color.FromArgb(0, 136, 214, 255);
             viewTitleBar.ButtonBackgroundColor = Color.FromArgb(0, 136, 214, 255);
 
-            // 获取到全局的user
-            Models.User user = App.user;
+
+            GoalsList = new Models.GoalsList();
+        }
+
+        private Models.GoalsList GoalsList { set; get; }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            // 改回顶栏的颜色
+            var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
+            viewTitleBar.BackgroundColor = Color.FromArgb(0, 136, 214, 255);
+            viewTitleBar.ButtonBackgroundColor = Color.FromArgb(0, 136, 214, 255);
         }
 
         private void goalsButton_Click(object sender, RoutedEventArgs e)
@@ -44,6 +56,5 @@ namespace Account
         {
             Frame.Navigate(typeof(Details));
         }
-
     }
 }

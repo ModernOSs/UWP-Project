@@ -28,8 +28,42 @@ namespace Account
             var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
             viewTitleBar.BackgroundColor = Windows.UI.Colors.LightGray;
             viewTitleBar.ButtonBackgroundColor = Windows.UI.Colors.LightGray;
-
             NavigationCacheMode = NavigationCacheMode.Enabled;
+
+            goalsList = new Models.GoalsList();
+        }
+
+        private Models.GoalsList goalsList { set; get; }
+
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            // 改回顶栏的颜色
+            var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
+            viewTitleBar.BackgroundColor = Windows.UI.Colors.LightGray;
+            viewTitleBar.ButtonBackgroundColor = Windows.UI.Colors.LightGray;
+
+        }
+
+        private void addGoalButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AddGoal), goalsList);
+        }
+
+        private void goalList_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void finish_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            (sender as SymbolIcon).Visibility = Visibility.Collapsed;
+            goalsList.finishGoal();
+        }
+
+        private void delete_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            goalsList.removeGoal((sender as SymbolIcon).Tag.ToString());
         }
     }
 }

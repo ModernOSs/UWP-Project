@@ -3,24 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace Account.Models
 {
-    class Goal
+    public class Goal
     {
-        private string id;
-        private string name;
-        private double price;
-        private DateTimeOffset dueTime;
-        private string description;
+        public string id;
+        public string name;
+        public double price;
+        public DateTimeOffset dueTime;
+        public string description;
+        public string imageName;
+        public BitmapImage bitmapImageSource;
 
-        public Goal(string name, double price, DateTimeOffset dueTime, string description)
+        public Goal(string name, double price, DateTimeOffset dueTime, string description, string imageName, BitmapImage bitmapImageSource)
         {
             this.id = Guid.NewGuid().ToString();
             this.name = name;
             this.price = price;
             this.dueTime = dueTime;
             this.description = description;
+            this.imageName = imageName;
+            this.bitmapImageSource = bitmapImageSource;
         }
 
         public string getId()
