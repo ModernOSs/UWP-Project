@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -22,6 +23,7 @@ namespace Account
     /// </summary>
     public sealed partial class AddNewItemPage : Page
     {
+        string source;
         public AddNewItemPage()
         {
             this.InitializeComponent();
@@ -39,54 +41,22 @@ namespace Account
             viewTitleBar.ButtonBackgroundColor = Windows.UI.Colors.LightGray;
         }
 
-        private void others_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void phone_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void utilities_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void social_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void fun_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void traffic_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void shopping_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void medical_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void education_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
 
         private void create_Click(object sender, RoutedEventArgs e)
         {
+            double amount = Double.Parse(number.Text);
+            DateTimeOffset? time = date.Date;
+            Debug.WriteLine(source);
+            Debug.WriteLine(amount);
+            Debug.WriteLine(time);
             Frame.Navigate(typeof(Details));
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            source = button.Name;
+            details.Text = source+":";
         }
     }
 }
