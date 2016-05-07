@@ -8,50 +8,16 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid x:ConnectionId='1' x:Name="loginView" Visibility="Visible">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <TextBox x:ConnectionId='8' Grid.Row="1" Width="300" x:Name="username" Margin="20"/>
-            <TextBox x:ConnectionId='9' Grid.Row="2" Width="300" x:Name="password" Margin="20"/>
-            <CheckBox x:ConnectionId='10' Grid.Row="3" x:Name="auto" Content="保持登录" HorizontalAlignment="Center"/>
-            <Grid Grid.Row="4" Width="300">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Button x:ConnectionId='12' x:Name="toRegister" Grid.Column="0" Height="40" Width="100" Content="注册"                           Margin="20" HorizontalAlignment="Center"/>
-                <Button x:ConnectionId='13' x:Name="login" Grid.Column="1" Height="40" Width="100" Content="登录"                      Margin="20" HorizontalAlignment="Center"/>
-            </Grid>
-            <TextBlock x:ConnectionId='11' Grid.Row="5" x:Name="loginErr" HorizontalAlignment="Center"/>
-        </Grid>
-        <Grid x:ConnectionId='2' x:Name="registerView" Visibility="Collapsed">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <TextBox x:ConnectionId='3' Grid.Row="1" Width="200" x:Name="username_" Margin="20"/>
-            <TextBox x:ConnectionId='4' Grid.Row="2" Width="200" x:Name="password_" Margin="20"/>
-            <Grid Grid.Row="3" Width="300">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Button x:ConnectionId='6' x:Name="toLogin" Grid.Column="0" Height="40" Width="100" Content="登录"                       Margin="20" HorizontalAlignment="Center"/>
-                <Button x:ConnectionId='7' x:Name="submit" Grid.Column="1" Height="40" Width="100" Content="提交"                      Margin="20" HorizontalAlignment="Center"/>
-            </Grid>
-            <TextBlock x:ConnectionId='5' Grid.Row="4" x:Name="registerErr" HorizontalAlignment="Center"/>
-        </Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:ConnectionId='1' Grid.Row="1" Width="200" x:Name="username" Margin="20"/>
+        <TextBox x:ConnectionId='2' Grid.Row="2" Width="200" x:Name="password" Margin="20"/>
+        <Button x:ConnectionId='3' Grid.Row="3" Height="40" Width="100" Content="提交"                       Margin="20" HorizontalAlignment="Center"/>
     </Grid>
 </Page>
 

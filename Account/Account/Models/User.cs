@@ -23,6 +23,7 @@ namespace Account.Models
             incomesList.addIncome("餐饮", 120.5, DateTimeOffset.Now);
             incomesList.addIncome("娱乐", 30, DateTimeOffset.Now);
             incomesList.addIncome("生活", 108.5, DateTimeOffset.Now);
+
         }
 
         public void addIncome(string source, double amount, DateTimeOffset date)
