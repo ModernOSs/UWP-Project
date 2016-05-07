@@ -25,6 +25,9 @@ namespace Account
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        Models.IncomesList incomesList { set; get; }
+        Models.GoalsList goalsList { set; get; }
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -33,11 +36,42 @@ namespace Account
             viewTitleBar.BackgroundColor = Color.FromArgb(0, 136, 214, 255);
             viewTitleBar.ButtonBackgroundColor = Color.FromArgb(0, 136, 214, 255);
 
-
-            GoalsList = new Models.GoalsList();
+            this.incomesList = App.user.incomesList;
+            this.goalsList = App.user.goalsList;
+            initializeData();
         }
 
-        private Models.GoalsList GoalsList { set; get; }
+        private void initializeData()
+        {
+            double incomes = 0, outcomes = 0, todayOutcomes = 0, todayIncomes = 0;
+            for (int i = 0; i < incomesList.AllIncomes.Count; i++)
+            {
+                if (incomesList.AllIncomes.ToArray()[i].date.Month == DateTimeOffset.Now.Month)
+                {
+                    if (incomesList.AllIncomes.ToArray()[i].inOrOut == "花费")
+                        outcomes += incomesList.AllIncomes.ToArray()[i].amount;
+                    else
+                        incomes += incomesList.AllIncomes.ToArray()[i].amount;
+                }
+                if (incomesList.AllIncomes.ToArray()[i].date.Day == DateTimeOffset.Now.Day)
+                {
+                    if (incomesList.AllIncomes.ToArray()[i].inOrOut == "花费")
+                        todayOutcomes += incomesList.AllIncomes.ToArray()[i].amount;
+                    else
+                        todayIncomes += incomesList.AllIncomes.ToArray()[i].amount;
+                }
+            }
+            incomesText.Text = ((int)incomes).ToString();
+            outcomesText.Text = ((int)outcomes).ToString();
+            todayOutcomesText.Text = ((int)todayOutcomes).ToString();
+            todayIncomesText.Text = ((int)todayIncomes).ToString();
+
+            goalsNumberText.Text = goalsList.AllGoals.Count.ToString();
+            Thickness margin;
+            margin.Top = 440 * outcomes / (incomes + 1) - 220;
+            margin.Left = 0; margin.Right = 0; margin.Bottom = 0;
+            webview.Margin = margin;
+        }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {

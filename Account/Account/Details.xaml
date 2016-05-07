@@ -127,7 +127,7 @@
                                         <ColumnDefinition Width="auto"/>
                                         <ColumnDefinition Width="auto"/>
                                     </Grid.ColumnDefinitions>
-                                    <TextBlock Grid.Column="0" Text="花费" VerticalAlignment="Center"/>
+                                    <TextBlock Grid.Column="0" Text="{x:Bind inOrOut}" VerticalAlignment="Center"/>
                                     <TextBlock Grid.Column="1" Text="{x:Bind amount}" VerticalAlignment="Center"/>
                                     <TextBlock Grid.Column="2" Text="元" VerticalAlignment="Center"/>
                                 </Grid>

@@ -18,9 +18,9 @@ namespace Account.Models
             incomesCount = 0;
         }
 
-        public void addIncome(string source, double amount, DateTimeOffset date)
+        public void addIncome(string source, double amount, DateTimeOffset date, string inOrOut)
         {
-            allIncomes.Add(new Incomes(incomesCount, source, amount, date));
+            allIncomes.Add(new Incomes(incomesCount, source, amount, date, inOrOut));
             incomesCount++;
         }
 

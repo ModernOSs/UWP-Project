@@ -260,6 +260,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.WebView">
       <RootProperty Name="Source" />
       <RootProperty Name="UseLayoutRounding" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Account.MainPage" />
   </Roots.RootTypes>
