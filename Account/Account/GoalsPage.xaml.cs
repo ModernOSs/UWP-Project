@@ -30,7 +30,7 @@ namespace Account
             viewTitleBar.ButtonBackgroundColor = Windows.UI.Colors.LightGray;
             NavigationCacheMode = NavigationCacheMode.Enabled;
 
-            goalsList = new Models.GoalsList();
+            goalsList = App.user.goalsList;
         }
 
         private Models.GoalsList goalsList { set; get; }

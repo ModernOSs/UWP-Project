@@ -5,6 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Account"
     xmlns:md="using:Account.Models"
+    xmlns:common="using:Account.Common"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -14,6 +15,10 @@
             <AppBarButton x:Name="addNewItemButton" Icon="add" Label="添加新项" Click="addNewItemButton_Click"/>
         </CommandBar>
     </Page.BottomAppBar>
+    
+    <Page.Resources>
+        <common:KindToImageSource x:Key="KindToImageSource" />
+    </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
@@ -108,14 +113,7 @@
                             </Grid.ColumnDefinitions>
 
                             <Border Grid.Column="0" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
-                                <Button HorizontalAlignment="Center" Width="36" Height="36" Padding="0" BorderThickness="0">
-                                    <Button.Content>
-                                        <Grid Background="White" Width="36" Height="36" >
-                                            <Image Source="Assets/food.png"/>
-                                        </Grid>
-                                    </Button.Content>
-                                </Button>
-                            </Border>
+                                <Image Width="40" Height="40" Source="{x:Bind kind, Converter={StaticResource KindToImageSource}}"/>                            </Border>
                             <Grid Grid.Column="1" Margin="40, 5">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="2*"/>
@@ -127,7 +125,7 @@
                                         <ColumnDefinition Width="auto"/>
                                         <ColumnDefinition Width="auto"/>
                                     </Grid.ColumnDefinitions>
-                                    <TextBlock Grid.Column="0" Text="{x:Bind inOrOut}" VerticalAlignment="Center"/>
+                                    <TextBlock Grid.Column="0" Text="花费" VerticalAlignment="Center"/>
                                     <TextBlock Grid.Column="1" Text="{x:Bind amount}" VerticalAlignment="Center"/>
                                     <TextBlock Grid.Column="2" Text="元" VerticalAlignment="Center"/>
                                 </Grid>

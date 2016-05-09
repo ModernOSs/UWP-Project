@@ -29,18 +29,18 @@ namespace Account
         public AddGoal()
         {
             this.InitializeComponent();
-
+            goalsList = App.user.goalsList;
+            dueTime.Date = DateTime.Today;
         }
 
         private BitmapImage bitmapImageSource;
         private string imageName;
         private Models.GoalsList goalsList;
 
+        public DateTimeOffset OfficialDate;
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            //  获取GoalsList
-            goalsList = ((Models.GoalsList)e.Parameter);
-
             //  将bitmapImageSource 和 imageName 设置为默认图片
             BitmapImage bitmapimage = new BitmapImage();
             Uri uri = new Uri("ms-appx:///Assets/default.jpg");
@@ -59,14 +59,9 @@ namespace Account
             }
             else
             {
-                goalsList.addGoal(name.Text, Convert.ToDouble(price.Text), dueTime.Date, description.Text, imageName, bitmapImageSource);
-                Frame.Navigate(typeof(GoalsPage), goalsList);
+                goalsList.addGoal(name.Text, Convert.ToDouble(price.Text), OfficialDate, description.Text, imageName, bitmapImageSource);
+                Frame.Navigate(typeof(GoalsPage));
             }
-        }
-
-        private void updateBtn_Click(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void cancelBtn_Click(object sender, RoutedEventArgs e)
@@ -132,6 +127,11 @@ namespace Account
                 err += errInfo[3];
             }
             return err;
+        }
+
+        private void dueTime_DateChanged(CalendarDatePicker sender, CalendarDatePickerDateChangedEventArgs args)
+        {
+            OfficialDate = args.NewDate.Value.LocalDateTime;
         }
     }
 }

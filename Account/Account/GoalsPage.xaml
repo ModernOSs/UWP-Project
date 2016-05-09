@@ -44,7 +44,6 @@
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="md:Goal">
                         <UserControl>
-
                             <Grid Height="160" Margin="10" BorderThickness="1" BorderBrush="LightGray">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="48"/>
@@ -70,19 +69,16 @@
                                             <RowDefinition Height="0.618*"/>
                                             <RowDefinition Height="0.382*"/>
                                         </Grid.RowDefinitions>
-                                        <TextBlock Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Text="{x:Bind description}" TextWrapping="Wrap" MaxWidth="220"/>
+                                        <TextBlock Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Text="{x:Bind description}" TextWrapping="Wrap" Width="220" Margin="16"/>
                                         <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" Text="{x:Bind dueTime.Date}" Margin="0, 0, 10, 0"/>
                                     </Grid>
                                 </Grid>
                                 <Image Grid.Column="2" Source="{x:Bind bitmapImageSource}" Stretch="Fill"/>
                             </Grid>
-
                         </UserControl>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
-
         </ScrollViewer>
     </Grid>
 </Page>

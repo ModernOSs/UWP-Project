@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -51,19 +52,99 @@ namespace Account
         {
             // 改回顶栏的颜色
             var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
-            viewTitleBar.BackgroundColor = Windows.UI.Colors.LightGray;
-            viewTitleBar.ButtonBackgroundColor = Windows.UI.Colors.LightGray;
+            viewTitleBar.BackgroundColor = Color.FromArgb(0, 136, 214, 255);
+            viewTitleBar.ButtonBackgroundColor = Color.FromArgb(0, 136, 214, 255);
         }
 
         private void LoadChartContents()
         {
-            Random rand = new Random();
             List<FinancialStuff> financialStuffList = new List<FinancialStuff>();
-            financialStuffList.Add(new FinancialStuff() { Name = "JAN", Amount = rand.Next(0, 200) });
-            financialStuffList.Add(new FinancialStuff() { Name = "FEB", Amount = rand.Next(0, 200) });
-            financialStuffList.Add(new FinancialStuff() { Name = "MAR", Amount = rand.Next(0, 200) });
-            financialStuffList.Add(new FinancialStuff() { Name = "APR", Amount = rand.Next(0, 200) });
+            Dictionary<Models.kind, double> dic = new Dictionary<Models.kind, double>();
+            Models.kind[] myKind = { Models.kind.food, Models.kind.traffic, Models.kind.shopping, Models.kind.medical, Models.kind.travel, Models.kind.fun, Models.kind.contact, Models.kind.money, Models.kind.education, Models.kind.other };
+            for (int i = 0; i < 10; i++)
+                dic.Add(myKind[i], 0);
+            for (int i = 0; i < incomesList.AllIncomes.Count; i++)
+                dic[incomesList.AllIncomes.ToArray()[i].kind] += incomesList.AllIncomes.ToArray()[i].amount;
+
+            for (int t = 0; t < 4; t++)
+            {
+                int max = 0;
+                for (int i = 0; i < 10 - t; i++)
+                {
+                    if (dic[myKind[max]] < dic[myKind[i]]) max = i;
+                }
+                switch (myKind[max])
+                {
+                    case Models.kind.food:
+                        financialStuffList.Add(new FinancialStuff() { Name = "餐饮", Amount = Convert.ToInt32(dic[myKind[max]]) });
+                        break;
+                    case Models.kind.traffic:
+                        financialStuffList.Add(new FinancialStuff() { Name = "交通", Amount = Convert.ToInt32(dic[myKind[max]]) });
+                        break;
+                    case Models.kind.shopping:
+                        financialStuffList.Add(new FinancialStuff() { Name = "购物", Amount = Convert.ToInt32(dic[myKind[max]]) });
+                        break;
+                    case Models.kind.medical:
+                        financialStuffList.Add(new FinancialStuff() { Name = "医疗", Amount = Convert.ToInt32(dic[myKind[max]]) });
+                        break;
+                    case Models.kind.travel:
+                        financialStuffList.Add(new FinancialStuff() { Name = "旅游", Amount = Convert.ToInt32(dic[myKind[max]]) });
+                        break;
+                    case Models.kind.fun:
+                        financialStuffList.Add(new FinancialStuff() { Name = "娱乐", Amount = Convert.ToInt32(dic[myKind[max]]) });
+                        break;
+                    case Models.kind.contact:
+                        financialStuffList.Add(new FinancialStuff() { Name = "社交", Amount = Convert.ToInt32(dic[myKind[max]]) });
+                        break;
+                    case Models.kind.education:
+                        financialStuffList.Add(new FinancialStuff() { Name = "教育", Amount = Convert.ToInt32(dic[myKind[max]]) });
+                        break;
+                    case Models.kind.money:
+                        financialStuffList.Add(new FinancialStuff() { Name = "投资", Amount = Convert.ToInt32(dic[myKind[max]]) });
+                        break;
+                    case Models.kind.other:
+                        financialStuffList.Add(new FinancialStuff() { Name = "其他", Amount = Convert.ToInt32(dic[myKind[max]]) });
+                        break;
+                }
+                dic.Remove(myKind[max]);
+                if (max != 10 - t - 1)
+                {
+                    myKind[max] = myKind[10 - t - 1];
+                }
+            }
             (PieChart.Series[0] as PieSeries).ItemsSource = financialStuffList;
+            financialStuffList.Clear();
+            int mouth = DateTime.Now.Month, year = DateTime.Now.Year;
+
+            double[] thisyear = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            double[] lastyear = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            for (int i = 0; i < incomesList.AllIncomes.Count; i++)
+            {
+                if (incomesList.AllIncomes.ToArray()[i].date.Year == year)
+                    thisyear[incomesList.AllIncomes.ToArray()[i].date.Month - 1] += incomesList.AllIncomes.ToArray()[i].amount;
+                if (incomesList.AllIncomes.ToArray()[i].date.Year == year - 1)
+                    lastyear[incomesList.AllIncomes.ToArray()[i].date.Month - 1] += incomesList.AllIncomes.ToArray()[i].amount;
+            }
+
+            financialStuffList.Add(new FinancialStuff() { Name = "本月", Amount = Convert.ToInt32(thisyear[mouth - 1]) });
+
+            for (int i = 0; i < 3; i++)
+            {
+                string name;
+                mouth--;
+                if (mouth <= 0)
+                {
+                    int temp = mouth + 12;
+                    name = temp + "月";
+                    financialStuffList.Add(new FinancialStuff() { Name = name, Amount = Convert.ToInt32(lastyear[temp - 1]) });
+                }
+                else
+                {
+                    name = mouth + "月";
+                    financialStuffList.Add(new FinancialStuff() { Name = name, Amount = Convert.ToInt32(thisyear[mouth - 1]) });
+                }
+            }
+            financialStuffList.Reverse();
             (ColumnChart.Series[0] as ColumnSeries).ItemsSource = financialStuffList;
         }
 

@@ -104,6 +104,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Common\KindToImageSource.cs" />
     <Compile Include="Details.xaml.cs">
       <DependentUpon>Details.xaml</DependentUpon>
     </Compile>
@@ -130,10 +131,19 @@
     <None Include="Account_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\back.jpg" />
+    <Content Include="Assets\contact.png" />
     <Content Include="Assets\default.jpg" />
+    <Content Include="Assets\education.png" />
     <Content Include="Assets\example1.png" />
-    <Content Include="Assets\fen.jpg" />
     <Content Include="Assets\food.png" />
+    <Content Include="Assets\fun.png" />
+    <Content Include="Assets\medical.png" />
+    <Content Include="Assets\money.png" />
+    <Content Include="Assets\other.png" />
+    <Content Include="Assets\shopping.png" />
+    <Content Include="Assets\traffic.png" />
+    <Content Include="Assets\travel.png" />
     <Content Include="Assets\waterBlue.png" />
     <Content Include="Assets\waterTank.png" />
     <Content Include="WaterTank.html" />

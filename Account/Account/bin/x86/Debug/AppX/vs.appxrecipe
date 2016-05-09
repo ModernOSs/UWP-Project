@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>03509dce-9bf3-47c8-be42-7cd32ce458b4</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\liuren\Desktop\Account\Account\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\liuren\Desktop\UWP-Project\Account\Account\obj\x86\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>C2586945BEBEB2BC81166D0A1C5D9E3EA3B27FFEDB4DE3033B4B6440AB6CC38F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>03509dce-9bf3-47c8-be42-7cd32ce458b4_1.0.0.0_x86__2t9wp0ffyd37g</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>03509dce-9bf3-47c8-be42-7cd32ce458b4_2t9wp0ffyd37g!App</RegisteredUserModeAppID>
@@ -19,16 +19,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-07T04:01:45.745</Modified>
+      <Modified>2016-05-09T00:40:23.526</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\Account.exe">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\bin\x86\Debug\Account.exe">
       <PackagePath>entrypoint\Account.exe</PackagePath>
-      <Modified>2016-05-07T04:01:45.051</Modified>
+      <Modified>2016-05-09T00:40:22.850</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liuren\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -462,79 +462,115 @@
       <PackagePath>WinRTXamlToolkit.dll</PackagePath>
       <Modified>2016-04-20T15:01:01.852</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\ApplicationInsights.config">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
-      <Modified>2016-05-06T11:53:30.000</Modified>
+      <Modified>2016-05-07T03:00:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\default.jpg">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\back.jpg">
+      <PackagePath>Assets\back.jpg</PackagePath>
+      <Modified>2016-05-08T04:12:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\default.jpg">
       <PackagePath>Assets\default.jpg</PackagePath>
-      <Modified>2016-05-06T11:53:30.000</Modified>
+      <Modified>2016-05-07T03:00:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\fen.jpg">
-      <PackagePath>Assets\fen.jpg</PackagePath>
-      <Modified>2016-05-06T11:53:30.000</Modified>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\contact.png">
+      <PackagePath>Assets\contact.png</PackagePath>
+      <Modified>2016-05-07T13:52:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\example1.png">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\education.png">
+      <PackagePath>Assets\education.png</PackagePath>
+      <Modified>2016-05-07T13:55:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\example1.png">
       <PackagePath>Assets\example1.png</PackagePath>
-      <Modified>2016-05-06T11:53:30.000</Modified>
+      <Modified>2016-05-07T02:59:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\food.png">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\food.png">
       <PackagePath>Assets\food.png</PackagePath>
-      <Modified>2016-05-06T11:53:30.000</Modified>
+      <Modified>2016-05-07T13:52:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\waterBlue.png">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\fun.png">
+      <PackagePath>Assets\fun.png</PackagePath>
+      <Modified>2016-05-07T13:52:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\medical.png">
+      <PackagePath>Assets\medical.png</PackagePath>
+      <Modified>2016-05-07T13:52:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\money.png">
+      <PackagePath>Assets\money.png</PackagePath>
+      <Modified>2016-05-07T13:52:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\other.png">
+      <PackagePath>Assets\other.png</PackagePath>
+      <Modified>2016-05-08T01:27:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\shopping.png">
+      <PackagePath>Assets\shopping.png</PackagePath>
+      <Modified>2016-05-07T13:52:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\traffic.png">
+      <PackagePath>Assets\traffic.png</PackagePath>
+      <Modified>2016-05-07T13:52:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\travel.png">
+      <PackagePath>Assets\travel.png</PackagePath>
+      <Modified>2016-05-07T13:55:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\waterBlue.png">
       <PackagePath>Assets\waterBlue.png</PackagePath>
-      <Modified>2016-05-06T11:53:30.000</Modified>
+      <Modified>2016-05-07T02:59:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\waterTank.png">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\waterTank.png">
       <PackagePath>Assets\waterTank.png</PackagePath>
-      <Modified>2016-05-06T11:53:30.000</Modified>
+      <Modified>2016-05-07T02:59:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2016-05-06T11:53:30.000</Modified>
+      <Modified>2016-05-07T02:59:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-06T11:53:30.000</Modified>
+      <Modified>2016-05-07T02:59:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-06T11:53:30.000</Modified>
+      <Modified>2016-05-07T02:59:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-06T11:53:30.000</Modified>
+      <Modified>2016-05-07T02:59:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-06T11:53:30.000</Modified>
+      <Modified>2016-05-07T02:59:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-06T11:53:30.000</Modified>
+      <Modified>2016-05-07T02:59:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-06T11:53:30.000</Modified>
+      <Modified>2016-05-07T02:59:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\WaterTank.html">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\WaterTank.html">
       <PackagePath>WaterTank.html</PackagePath>
-      <Modified>2016-05-06T11:53:30.000</Modified>
+      <Modified>2016-05-07T03:00:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2016-05-06T11:53:30.000</Modified>
+      <Modified>2016-05-07T03:00:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\Account.xr.xml">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\bin\x86\Debug\Account.xr.xml">
       <PackagePath>Account.xr.xml</PackagePath>
-      <Modified>2016-05-07T03:51:33.115</Modified>
+      <Modified>2016-05-09T00:33:41.372</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -556,13 +592,13 @@
       <PackagePath>WinRTXamlToolkit\Properties\WinRTXamlToolkit.UWP.rd.xml</PackagePath>
       <Modified>2016-04-20T15:01:02.160</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-05-07T04:01:45.546</Modified>
+      <Modified>2016-05-09T00:40:23.331</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\liuren\Desktop\Account\Account\bin\x86\Debug\Core\Account.exe">
+    <AppxPackagedFile Include="C:\Users\liuren\Desktop\UWP-Project\Account\Account\bin\x86\Debug\Core\Account.exe">
       <PackagePath>Account.exe</PackagePath>
-      <Modified>2016-05-07T04:01:45.740</Modified>
+      <Modified>2016-05-09T00:40:23.522</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

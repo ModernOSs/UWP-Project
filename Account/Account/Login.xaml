@@ -6,9 +6,11 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid x:Name="loginView" Visibility="Visible">
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/back.jpg" Stretch="None"/>
+        </Grid.Background>
+        <Grid x:Name="loginView" Visibility="Visible" Width="360" Height="400" Background="White" Opacity="0.618">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="auto"/>
@@ -18,20 +20,27 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBox Grid.Row="1" Width="300" x:Name="username" Margin="20"/>
-            <TextBox Grid.Row="2" Width="300" x:Name="password" Margin="20"/>
-            <CheckBox Grid.Row="3" x:Name="auto" Content="保持登录" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="0" Width="200" Name="loginErr" Foreground="Red" HorizontalAlignment="Center" TextAlignment="Center" VerticalAlignment="Bottom" Height="40"/>
+            <ProgressBar Grid.Row="0" x:Name="progressBar" IsIndeterminate="True" Opacity="0" HorizontalAlignment="Center"  VerticalAlignment="Bottom"  Width="300" Height="40"/>
+            <Grid Grid.Row="1">
+                <AppBarButton Icon="Contact" Height="48" Width="48" VerticalAlignment="Center" Margin="-248, 0, 0, 0" HorizontalAlignment="Center"/>
+                <TextBox PlaceholderText="请输入您的账户" Width="300" Height="48" x:Name="username" Margin="0,16,0,16" Padding="54, 12, 12, 0"/>
+            </Grid>
+            <Grid Grid.Row="2">
+                <AppBarButton Height="48" Width="48" VerticalAlignment="Center" Margin="-248, 0, 0, 0" HorizontalAlignment="Center" Icon="ReportHacked"/>
+                <PasswordBox PlaceholderText="请输入您的密码" Width="300" Height="48" x:Name="password" Margin="0,16,0,16" Padding="54, 10, 10, 0"/>
+            </Grid>
+            <CheckBox Grid.Row="3" x:Name="auto" Content="保持登录" HorizontalAlignment="Center" Margin="0, 0, 0, 20"/>
             <Grid Grid.Row="4" Width="300">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="toRegister" Grid.Column="0" Height="40" Width="100" Content="注册" Click="toRegister_Click"  Margin="20" HorizontalAlignment="Center"/>
-                <Button x:Name="login" Grid.Column="1" Height="40" Width="100" Content="登录" Click="login_Click"  Margin="20" HorizontalAlignment="Center"/>
+                <Button x:Name="toRegister" HorizontalAlignment="Left" Grid.Column="0" Height="40" Width="120" Content="注册" Click="toRegister_Click" />
+                <Button x:Name="login" Grid.Column="1" Height="40" Width="120" Content="登录" Click="login_Click"  HorizontalAlignment="Right"/>
             </Grid>
-            <TextBlock Grid.Row="5" x:Name="loginErr" HorizontalAlignment="Center"/>
         </Grid>
-        <Grid x:Name="registerView" Visibility="Collapsed">
+        <Grid x:Name="registerView" Visibility="Collapsed" Width="360" Height="400" Background="White" Opacity="0.618">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="auto"/>
@@ -40,8 +49,14 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBox Grid.Row="1" Width="200" x:Name="username_" Margin="20"/>
-            <TextBox Grid.Row="2" Width="200" x:Name="password_" Margin="20"/>
+            <Grid Grid.Row="1">
+                <AppBarButton Icon="Contact" Height="48" Width="48" VerticalAlignment="Center" Margin="-248, 0, 0, 0" HorizontalAlignment="Center"/>
+                <TextBox PlaceholderText="请设置您的账户" Width="300" Height="48" x:Name="username_" Margin="0,16,0,16" Padding="54, 12, 12, 0"/>
+            </Grid>
+            <Grid Grid.Row="2">
+                <AppBarButton Height="48" Width="48" VerticalAlignment="Center" Margin="-248, 0, 0, 0" HorizontalAlignment="Center" Icon="ReportHacked"/>
+                <PasswordBox PlaceholderText="请设置您的密码" Width="300" Height="48" x:Name="password_" Margin="0,16,0,16" Padding="54, 10, 10, 0"/>
+            </Grid>
             <Grid Grid.Row="3" Width="300">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>

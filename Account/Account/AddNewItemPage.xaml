@@ -21,10 +21,10 @@
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <TextBox Text="0.00" Grid.Column="0" FontSize="64" TextAlignment="Left" BorderThickness="0" VerticalAlignment="Center"/>
+            <TextBox Text="0.00" Name="number" Grid.Column="0" FontSize="64" TextAlignment="Left" BorderThickness="0" VerticalAlignment="Center"/>
             <TextBlock Text="元" Grid.Column="1" FontSize="24" TextAlignment="Center" Margin="0,3,0,0" VerticalAlignment="Center"/>
             <Border Grid.Column="2" BorderThickness="0,0,2,0" BorderBrush="LightGray" />
-            <CalendarDatePicker Margin="24, 0, 12, 0" Grid.Column="3" HorizontalAlignment="Left" FontSize="16" Header="日期"  IsTodayHighlighted="True"/>
+            <CalendarDatePicker x:Name="date" Margin="24, 0, 12, 0" Grid.Column="3" HorizontalAlignment="Left" FontSize="16"  IsTodayHighlighted="True" DateChanged="date_DateChanged" />
         </Grid>
 
         <Grid Grid.Row="1" Margin="10">
@@ -44,7 +44,7 @@
                     <ColumnDefinition Width="0.1*"/>
                 </Grid.ColumnDefinitions>
                 <Border Grid.Column="1" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
-                    <Button HorizontalAlignment="Center" Width="36" Height="36" Name="food" Padding="0" BorderThickness="0">
+                    <Button HorizontalAlignment="Center" Width="36" Height="36" Name="餐饮"  Padding="0" BorderThickness="0" Click="button_Click">
                         <Button.Content>
                             <Grid Background="White" Width="36" Height="36" >
                                 <Image Source="Assets/food.png"/>
@@ -52,10 +52,46 @@
                         </Button.Content>
                     </Button>
                 </Border>
-                <Button Style="{StaticResource buttonTemplate}" Grid.Column="2" Margin="5" HorizontalAlignment="Center" FontStyle="Normal" Click="traffic_Click" Name="traffic"/>
-                <Button Style="{StaticResource buttonTemplate}" Grid.Column="3" Margin="5" HorizontalAlignment="Center" FontStyle="Normal" Click="shopping_Click" Name="shopping"/>
-                <Button Style="{StaticResource buttonTemplate}" Grid.Column="4" Margin="5" HorizontalAlignment="Center" FontStyle="Normal" Click="medical_Click" Name="medical"/>
-                <Button Style="{StaticResource buttonTemplate}" Grid.Column="5" Margin="5" HorizontalAlignment="Center" FontStyle="Normal" Click="education_Click" Name="education"/>
+
+                <Border Grid.Column="2" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
+                    <Button HorizontalAlignment="Center" Width="36" Height="36" Name="交通" Padding="0" BorderThickness="0" Click="button_Click">
+                        <Button.Content>
+                            <Grid Background="White" Width="36" Height="36" >
+                                <Image Source="Assets/traffic.png"/>
+                            </Grid>
+                        </Button.Content>
+                    </Button>
+                </Border>
+
+                <Border Grid.Column="3" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
+                    <Button HorizontalAlignment="Center" Width="36" Height="36" Name="购物" Padding="0" BorderThickness="0" Click="button_Click">
+                        <Button.Content>
+                            <Grid Background="White" Width="36" Height="36" >
+                                <Image Source="Assets/shopping.png"/>
+                            </Grid>
+                        </Button.Content>
+                    </Button>
+                </Border>
+
+                <Border Grid.Column="4" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
+                    <Button HorizontalAlignment="Center" Width="36" Height="36" Name="医疗" Padding="0" BorderThickness="0" Click="button_Click">
+                        <Button.Content>
+                            <Grid Background="White" Width="36" Height="36" >
+                                <Image Source="Assets/medical.png"/>
+                            </Grid>
+                        </Button.Content>
+                    </Button>
+                </Border>
+
+                <Border Grid.Column="5" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
+                    <Button HorizontalAlignment="Center" Width="36" Height="36" Name="旅行" Padding="0" BorderThickness="0" Click="button_Click">
+                        <Button.Content>
+                            <Grid Background="White" Width="36" Height="36" >
+                                <Image Source="Assets/travel.png"/>
+                            </Grid>
+                        </Button.Content>
+                    </Button>
+                </Border>
             </Grid>
 
             <Grid Grid.Row="1">
@@ -68,11 +104,57 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="0.1*"/>
                 </Grid.ColumnDefinitions>
-                <Button Style="{StaticResource buttonTemplate}" Grid.Column="1" Margin="5" HorizontalAlignment="Center" FontStyle="Normal" Click="fun_Click" Name="fun"/>
-                <Button Style="{StaticResource buttonTemplate}" Grid.Column="2" Margin="5" HorizontalAlignment="Center" FontStyle="Normal" Click="social_Click" Name="social"/>
-                <Button Style="{StaticResource buttonTemplate}" Grid.Column="3" Margin="5" HorizontalAlignment="Center" FontStyle="Normal" Click="utilities_Click" Name="utilities"/>
-                <Button Style="{StaticResource buttonTemplate}" Grid.Column="4" Margin="5" HorizontalAlignment="Center" FontStyle="Normal" Click="phone_Click" Name="phone"/>
-                <Button Style="{StaticResource buttonTemplate}" Grid.Column="5" Margin="5" HorizontalAlignment="Center" FontStyle="Normal" Click="others_Click" Name="others"/>
+
+                <Border Grid.Column="1" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
+                    <Button HorizontalAlignment="Center" Width="36" Height="36" Name="娱乐" Padding="0" BorderThickness="0" Click="button_Click">
+                        <Button.Content>
+                            <Grid Background="White" Width="36" Height="36" >
+                                <Image Source="Assets/fun.png"/>
+                            </Grid>
+                        </Button.Content>
+                    </Button>
+                </Border>
+
+                <Border Grid.Column="2" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
+                    <Button HorizontalAlignment="Center" Width="36" Height="36" Name="社交" Padding="0" BorderThickness="0" Click="button_Click">
+                        <Button.Content>
+                            <Grid Background="White" Width="36" Height="36" >
+                                <Image Source="Assets/contact.png"/>
+                            </Grid>
+                        </Button.Content>
+                    </Button>
+                </Border>
+
+                <Border Grid.Column="3" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
+                    <Button HorizontalAlignment="Center" Width="36" Height="36" Name="投资" Padding="0" BorderThickness="0" Click="button_Click">
+                        <Button.Content>
+                            <Grid Background="White" Width="36" Height="36" >
+                                <Image Source="Assets/money.png"/>
+                            </Grid>
+                        </Button.Content>
+                    </Button>
+                </Border>
+
+                <Border Grid.Column="4" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
+                    <Button HorizontalAlignment="Center" Width="36" Height="36" Name="教育" Padding="0"  BorderThickness="0" Click="button_Click">
+                        <Button.Content>
+                            <Grid Background="White" Width="36" Height="36" >
+                                <Image Source="Assets/education.png"/>
+                            </Grid>
+                        </Button.Content>
+                    </Button>
+                </Border>
+
+                <Border Grid.Column="5" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
+                    <Button HorizontalAlignment="Center" Width="36" Height="36" Name="其他" Padding="0" BorderThickness="0" Click="button_Click">
+                        <Button.Content>
+                            <Grid Background="White" Width="36" Height="36" >
+                                <Image Source="Assets/other.png"/>
+                            </Grid>
+                        </Button.Content>
+                    </Button>
+                </Border>
+
             </Grid>
         </Grid>
 
@@ -80,7 +162,8 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <TextBox Name="details" Height="200" Header="描述" Margin="30, 30, 30, 20" />
+            <TextBlock Text="描述" Height="20" Width="50" Margin="-20,-40,350,180" FontWeight="Bold"></TextBlock>
+            <TextBox Name="details" Height="200" Margin="30, 30, 30, 20" />
         </Grid>
 
         <Button  Grid.Row="3" Margin="5" Background="White" BorderThickness="2" BorderBrush="LightGray" HorizontalAlignment="Center" Height="40" Content="创  建" Width="100" FontStyle="Normal" Click="create_Click" Name="create"/>
