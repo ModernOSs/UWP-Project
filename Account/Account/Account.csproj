@@ -104,6 +104,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Common\DateFomatterConverter.cs" />
+    <Compile Include="Common\IntToStringConverter.cs" />
     <Compile Include="Common\KindToImageSource.cs" />
     <Compile Include="Details.xaml.cs">
       <DependentUpon>Details.xaml</DependentUpon>

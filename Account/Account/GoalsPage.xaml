@@ -4,10 +4,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Account"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:common="using:Account.Common"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:md="using:Account.Models"
     mc:Ignorable="d">
 
+    <Page.Resources>
+        <common:IntToStringConverter x:Key="IntToStringConverter" />
+        <common:DateFomatterConverter x:Key="DateFomatterConverter" />
+    </Page.Resources>
+    
     <Page.BottomAppBar>
         <CommandBar>
             <AppBarButton x:Name="addGoalButton" Icon="add" Label="添加目标" Click="addGoalButton_Click"/>
@@ -32,7 +38,7 @@
             </Grid.ColumnDefinitions>
 
             <TextBlock Text="心愿共" Grid.Column="1" FontSize="20" VerticalAlignment="Bottom" Height="36"/>
-            <TextBlock Text="{x:Bind goalsList.goalCount}" Grid.Column="2" FontSize="48" Margin="10, 0, 10, 0"/>
+            <TextBlock Text="{x:Bind goalsList.goalCount, Converter={StaticResource IntToStringConverter}}" Grid.Column="2" FontSize="48" Margin="10, 0, 10, 0"/>
             <TextBlock Text="项，已完成" Grid.Column="3" FontSize="20" VerticalAlignment="Bottom" Height="36"/>
             <TextBlock Text="{x:Bind goalsList.finishedGoalCount}" Grid.Column="4" FontSize="48" Margin="10, 0, 10, 0"/>
             <TextBlock Text="项" Grid.Column="5" FontSize="20" VerticalAlignment="Bottom" Height="36"/>
@@ -70,7 +76,7 @@
                                             <RowDefinition Height="0.382*"/>
                                         </Grid.RowDefinitions>
                                         <TextBlock Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Text="{x:Bind description}" TextWrapping="Wrap" Width="220" Margin="16"/>
-                                        <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" Text="{x:Bind dueTime.Date}" Margin="0, 0, 10, 0"/>
+                                        <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" Text="{x:Bind dueTime, Converter={StaticResource DateFomatterConverter}}" Margin="0, 0, 10, 0"/>
                                     </Grid>
                                 </Grid>
                                 <Image Grid.Column="2" Source="{x:Bind bitmapImageSource}" Stretch="Fill"/>

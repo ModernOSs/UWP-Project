@@ -237,6 +237,8 @@
       <RootProperty Name="Fill" />
     </RootType>
     <RootType FullName="Account.Details" />
+    <RootType FullName="Account.Common.IntToStringConverter" />
+    <RootType FullName="Account.Common.DateFomatterConverter" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />
     </RootType>
