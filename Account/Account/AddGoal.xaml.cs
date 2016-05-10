@@ -108,7 +108,8 @@ namespace Account
             string[] errInfo = { "目标名称不能为空\n",
                                  "目标描述不能为空\n",
                                  "目标价格不能为空\n",
-                                 "完成日期不能早于今天\n" };
+                                 "完成日期不能早于今天\n",
+                                 "目标价格必须为数字\n"};
             string err = "";
             if (name.Text == "")
             {

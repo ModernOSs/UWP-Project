@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-10T08:32:17.261</Modified>
+      <Modified>2016-05-10T09:31:05.288</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\bin\x86\Debug\Account.exe">
       <PackagePath>entrypoint\Account.exe</PackagePath>
-      <Modified>2016-05-10T08:32:16.710</Modified>
+      <Modified>2016-05-10T09:31:04.850</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shower\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -570,7 +570,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\bin\x86\Debug\Account.xr.xml">
       <PackagePath>Account.xr.xml</PackagePath>
-      <Modified>2016-05-10T08:21:18.377</Modified>
+      <Modified>2016-05-10T09:18:52.895</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -594,11 +594,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-05-10T08:22:40.612</Modified>
+      <Modified>2016-05-10T09:21:49.175</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shower\Documents\GitHub\UWP-Project\Account\Account\bin\x86\Debug\Core\Account.exe">
       <PackagePath>Account.exe</PackagePath>
-      <Modified>2016-05-10T08:32:17.258</Modified>
+      <Modified>2016-05-10T09:31:05.280</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -43,6 +43,8 @@ namespace Account
             viewTitleBar.BackgroundColor = Windows.UI.Colors.LightGray;
             viewTitleBar.ButtonBackgroundColor = Windows.UI.Colors.LightGray;
 
+            goalCount.Text = goalsList.goalCount.ToString();
+            finishedGoalCount.Text = goalsList.finishedGoalCount.ToString();
         }
 
         private void addGoalButton_Click(object sender, RoutedEventArgs e)
@@ -60,11 +62,13 @@ namespace Account
             //(sender as SymbolIcon).Visibility = Visibility.Collapsed;
             goalsList.finishGoal();
             goalsList.removeGoal((sender as SymbolIcon).Tag.ToString());
+            Frame.Navigate(typeof(GoalsPage));
         }
 
         private void delete_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
             goalsList.removeGoal((sender as SymbolIcon).Tag.ToString());
+            Frame.Navigate(typeof(GoalsPage));
         }
     }
 }
