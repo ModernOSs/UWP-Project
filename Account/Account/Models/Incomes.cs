@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Account.Models
 {
-    public enum kind { food, traffic, shopping , medical , travel, fun , contact , money , education , other };
+    public enum kind { food, traffic, shopping , medical , travel, entertainment , contact , investment, education , other, bonus, salary, financial, welfare, otherincome };
     public class Incomes
     {
         public kind kind;

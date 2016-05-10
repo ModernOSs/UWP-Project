@@ -48,14 +48,14 @@ namespace Account
             {
                 if (incomesList.AllIncomes.ToArray()[i].date.Month == DateTimeOffset.Now.Month)
                 {
-                    if (incomesList.AllIncomes.ToArray()[i].inOrOut == "花费")
+                    if (incomesList.AllIncomes.ToArray()[i].inOrOut == "支出")
                         outcomes += incomesList.AllIncomes.ToArray()[i].amount;
                     else
                         incomes += incomesList.AllIncomes.ToArray()[i].amount;
                 }
                 if (incomesList.AllIncomes.ToArray()[i].date.Day == DateTimeOffset.Now.Day)
                 {
-                    if (incomesList.AllIncomes.ToArray()[i].inOrOut == "花费")
+                    if (incomesList.AllIncomes.ToArray()[i].inOrOut == "支出")
                         todayOutcomes += incomesList.AllIncomes.ToArray()[i].amount;
                     else
                         todayIncomes += incomesList.AllIncomes.ToArray()[i].amount;
@@ -71,6 +71,7 @@ namespace Account
             margin.Top = 440 * outcomes / (incomes + 1) - 220;
             margin.Left = 0; margin.Right = 0; margin.Bottom = 0;
             webview.Margin = margin;
+            webview.Source = new Uri("ms-appx-web:///WaterTank.html");
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -79,6 +80,7 @@ namespace Account
             var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
             viewTitleBar.BackgroundColor = Color.FromArgb(0, 136, 214, 255);
             viewTitleBar.ButtonBackgroundColor = Color.FromArgb(0, 136, 214, 255);
+            initializeData();
         }
 
         private void goalsButton_Click(object sender, RoutedEventArgs e)

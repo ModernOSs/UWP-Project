@@ -12,7 +12,7 @@
     <Page.Resources>
         <common:DateFomatterConverter x:Key="DateFomatterConverter" />
     </Page.Resources>
-    
+
     <Page.BottomAppBar>
         <CommandBar>
             <AppBarButton x:Name="addGoalButton" Icon="add" Label="添加目标" Click="addGoalButton_Click"/>

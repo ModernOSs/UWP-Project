@@ -60,16 +60,19 @@ namespace Account
         {
             List<FinancialStuff> financialStuffList = new List<FinancialStuff>();
             Dictionary<Models.kind, double> dic = new Dictionary<Models.kind, double>();
-            Models.kind[] myKind = { Models.kind.food, Models.kind.traffic, Models.kind.shopping, Models.kind.medical, Models.kind.travel, Models.kind.fun, Models.kind.contact, Models.kind.money, Models.kind.education, Models.kind.other };
-            for (int i = 0; i < 10; i++)
+            Models.kind[] myKind = { Models.kind.food, Models.kind.traffic, Models.kind.shopping, Models.kind.medical, Models.kind.travel,
+                                     Models.kind.entertainment, Models.kind.contact, Models.kind.investment, Models.kind.education, Models.kind.other,
+                                     Models.kind.bonus, Models.kind.salary, Models.kind.financial, Models.kind.welfare, Models.kind.otherincome};
+            for (int i = 0; i < 15; i++)
                 dic.Add(myKind[i], 0);
             for (int i = 0; i < incomesList.AllIncomes.Count; i++)
-                dic[incomesList.AllIncomes.ToArray()[i].kind] += incomesList.AllIncomes.ToArray()[i].amount;
+                if (incomesList.AllIncomes.ToArray()[i].inOrOut == "支出")
+                    dic[incomesList.AllIncomes.ToArray()[i].kind] += incomesList.AllIncomes.ToArray()[i].amount;
 
             for (int t = 0; t < 4; t++)
             {
                 int max = 0;
-                for (int i = 0; i < 10 - t; i++)
+                for (int i = 0; i < 15 - t; i++)
                 {
                     if (dic[myKind[max]] < dic[myKind[i]]) max = i;
                 }
@@ -90,7 +93,7 @@ namespace Account
                     case Models.kind.travel:
                         financialStuffList.Add(new FinancialStuff() { Name = "旅游", Amount = Convert.ToInt32(dic[myKind[max]]) });
                         break;
-                    case Models.kind.fun:
+                    case Models.kind.entertainment:
                         financialStuffList.Add(new FinancialStuff() { Name = "娱乐", Amount = Convert.ToInt32(dic[myKind[max]]) });
                         break;
                     case Models.kind.contact:
@@ -99,17 +102,32 @@ namespace Account
                     case Models.kind.education:
                         financialStuffList.Add(new FinancialStuff() { Name = "教育", Amount = Convert.ToInt32(dic[myKind[max]]) });
                         break;
-                    case Models.kind.money:
+                    case Models.kind.investment:
                         financialStuffList.Add(new FinancialStuff() { Name = "投资", Amount = Convert.ToInt32(dic[myKind[max]]) });
                         break;
                     case Models.kind.other:
                         financialStuffList.Add(new FinancialStuff() { Name = "其他", Amount = Convert.ToInt32(dic[myKind[max]]) });
                         break;
+                    case Models.kind.bonus:
+                        financialStuffList.Add(new FinancialStuff() { Name = "奖金", Amount = Convert.ToInt32(dic[myKind[max]]) });
+                        break;
+                    case Models.kind.salary:
+                        financialStuffList.Add(new FinancialStuff() { Name = "工资", Amount = Convert.ToInt32(dic[myKind[max]]) });
+                        break;
+                    case Models.kind.financial:
+                        financialStuffList.Add(new FinancialStuff() { Name = "理财", Amount = Convert.ToInt32(dic[myKind[max]]) });
+                        break;
+                    case Models.kind.welfare:
+                        financialStuffList.Add(new FinancialStuff() { Name = "福利", Amount = Convert.ToInt32(dic[myKind[max]]) });
+                        break;
+                    case Models.kind.otherincome:
+                        financialStuffList.Add(new FinancialStuff() { Name = "其他收入", Amount = Convert.ToInt32(dic[myKind[max]]) });
+                        break;
                 }
                 dic.Remove(myKind[max]);
-                if (max != 10 - t - 1)
+                if (max != 15 - t - 1)
                 {
-                    myKind[max] = myKind[10 - t - 1];
+                    myKind[max] = myKind[15 - t - 1];
                 }
             }
             (PieChart.Series[0] as PieSeries).ItemsSource = financialStuffList;
@@ -120,9 +138,9 @@ namespace Account
             double[] lastyear = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
             for (int i = 0; i < incomesList.AllIncomes.Count; i++)
             {
-                if (incomesList.AllIncomes.ToArray()[i].date.Year == year)
+                if (incomesList.AllIncomes.ToArray()[i].date.Year == year && incomesList.AllIncomes.ToArray()[i].inOrOut == "支出")
                     thisyear[incomesList.AllIncomes.ToArray()[i].date.Month - 1] += incomesList.AllIncomes.ToArray()[i].amount;
-                if (incomesList.AllIncomes.ToArray()[i].date.Year == year - 1)
+                if (incomesList.AllIncomes.ToArray()[i].date.Year == year - 1 && incomesList.AllIncomes.ToArray()[i].inOrOut == "支出")
                     lastyear[incomesList.AllIncomes.ToArray()[i].date.Month - 1] += incomesList.AllIncomes.ToArray()[i].amount;
             }
 
