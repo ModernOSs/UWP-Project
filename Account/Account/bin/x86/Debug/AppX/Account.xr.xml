@@ -130,8 +130,10 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Width" />
       <RootProperty Name="Header" />
+      <RootProperty Name="MaxLength" />
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="TextWrapping" />
       <RootProperty Name="Name" />
       <RootProperty Name="Text" />
       <RootProperty Name="FontSize" />
@@ -237,7 +239,6 @@
       <RootProperty Name="Fill" />
     </RootType>
     <RootType FullName="Account.Details" />
-    <RootType FullName="Account.Common.IntToStringConverter" />
     <RootType FullName="Account.Common.DateFomatterConverter" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />

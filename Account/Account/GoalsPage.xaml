@@ -10,7 +10,6 @@
     mc:Ignorable="d">
 
     <Page.Resources>
-        <common:IntToStringConverter x:Key="IntToStringConverter" />
         <common:DateFomatterConverter x:Key="DateFomatterConverter" />
     </Page.Resources>
     
@@ -38,9 +37,9 @@
             </Grid.ColumnDefinitions>
 
             <TextBlock Text="心愿共" Grid.Column="1" FontSize="20" VerticalAlignment="Bottom" Height="36"/>
-            <TextBlock Text="{x:Bind goalsList.goalCount, Converter={StaticResource IntToStringConverter}}" Grid.Column="2" FontSize="48" Margin="10, 0, 10, 0"/>
+            <TextBlock Text="0" Grid.Column="2" FontSize="48" Margin="10, 0, 10, 0" Name="goalCount"/>
             <TextBlock Text="项，已完成" Grid.Column="3" FontSize="20" VerticalAlignment="Bottom" Height="36"/>
-            <TextBlock Text="{x:Bind goalsList.finishedGoalCount}" Grid.Column="4" FontSize="48" Margin="10, 0, 10, 0"/>
+            <TextBlock Text="0" Grid.Column="4" FontSize="48" Margin="10, 0, 10, 0" Name="finishedGoalCount"/>
             <TextBlock Text="项" Grid.Column="5" FontSize="20" VerticalAlignment="Bottom" Height="36"/>
         </Grid>
 
