@@ -67,7 +67,7 @@ namespace Account
         private void cancelBtn_Click(object sender, RoutedEventArgs e)
         {
             name.Text = "";
-            price.Text = "";
+            price.Text = "0.00";
             description.Text = "";
             dueTime.Date = DateTime.Today;
 
@@ -108,7 +108,8 @@ namespace Account
             string[] errInfo = { "目标名称不能为空\n",
                                  "目标描述不能为空\n",
                                  "目标价格不能为空\n",
-                                 "完成日期不能早于今天\n" };
+                                 "完成日期不能早于今天\n",
+                                 "目标价格不合法"};
             string err = "";
             if (name.Text == "")
             {
