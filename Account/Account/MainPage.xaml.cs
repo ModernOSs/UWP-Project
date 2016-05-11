@@ -67,12 +67,23 @@ namespace Account
             todayOutcomesText.Text = ((int)todayOutcomes).ToString();
             todayIncomesText.Text = ((int)todayIncomes).ToString();
 
-            goalsNumberText.Text = goalsList.AllGoals.Count.ToString();
+            int goalsCount = goalsList.AllGoals.Count;
+            goalsNumberText.Text = goalsCount.ToString();
             Thickness margin;
             margin.Top = 440 * outcomes / (incomes + 1) - 220;
             margin.Left = 0; margin.Right = 0; margin.Bottom = 0;
             webview.Margin = margin;
             webview.Source = new Uri("ms-appx-web:///WaterTank.html");
+
+            double balance = outcomes / incomes;
+            if (balance > 1) tips.Content = "本月收支严重不平衡，要吃灰啦(＞﹏＜)";
+            else if (balance > 0.8) tips.Content = "余额不足20%，要剁手啦~>_<~";
+            else if (balance > 0.6) tips.Content = "本月余额不足40%，要注意节约哦~";
+            else tips.Content = "本月财务状况良好，犒劳一下自己吧（*_*）";
+
+            string tempName = goalsList.nameOfFirstUnfinishedGoal();
+            if (tempName == "") goal.Content = "心愿单里没有未完成的心愿哦，去添加一个吧~";
+            else goal.Content = "目标" + tempName + "xx还没完成，去给它攥点钱吧~ ";
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)

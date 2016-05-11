@@ -110,9 +110,8 @@
             <Grid Grid.Row="3" Margin="4, 0, 4, 0">
                 <ScrollViewer >
                     <ListView>
-                        <ListViewItem Content="余额不足20%，要剁手啦"/>
-                        <ListViewItem Content="本月余额还剩40%，要注意节约哦"/>
-                        <ListViewItem Content="目标 购买自行车 还没完成，去给它攥点钱吧"/>
+                        <ListViewItem x:Name="tips"/>
+                        <ListViewItem x:Name="goal"/>
                     </ListView>
                 </ScrollViewer>
             </Grid>
