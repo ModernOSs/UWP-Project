@@ -70,5 +70,40 @@ namespace Account
             goalsList.removeGoal((sender as SymbolIcon).Tag.ToString());
             Frame.Navigate(typeof(GoalsPage));
         }
+
+        private void goalsButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(GoalsPage));
+        }
+
+        private void splitViewButton_Click(object sender, RoutedEventArgs e)
+        {
+            mySplit.IsPaneOpen = !mySplit.IsPaneOpen;
+        }
+
+        private void detailsButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Details));
+        }
+
+        private void addNewItemButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AddNewItemPage));
+        }
+
+
+        private void navigation_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Grid e_ = (Grid)e.ClickedItem;
+            string pageName = ((TextBlock)VisualTreeHelper.GetChild(e_, 1)).Text;
+            if (pageName == "收支详情")
+                Frame.Navigate(typeof(Details));
+            else if (pageName == "添加收支")
+                Frame.Navigate(typeof(AddNewItemPage));
+            else if (pageName == "目标详情")
+                Frame.Navigate(typeof(GoalsPage));
+            else if (pageName == "添加目标")
+                Frame.Navigate(typeof(AddGoal));
+        }
     }
 }
