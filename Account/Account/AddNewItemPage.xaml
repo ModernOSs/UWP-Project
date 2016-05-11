@@ -54,6 +54,7 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="0.1*"/>
                 </Grid.ColumnDefinitions>
+                <TextBlock Text="奖金" Grid.Column="1" HorizontalAlignment="Center" Margin="0,35,0,35"></TextBlock>
                 <Border Grid.Column="1" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
                     <Button HorizontalAlignment="Center" Width="36" Height="36" Name="奖金"  Padding="0" BorderThickness="0" Click="button_Click">
                         <Button.Content>
@@ -64,6 +65,7 @@
                     </Button>
                 </Border>
 
+                <TextBlock Text="工资" Grid.Column="2" HorizontalAlignment="Center"  Margin="0,35,0,35"></TextBlock>
                 <Border Grid.Column="2" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
                     <Button HorizontalAlignment="Center" Width="36" Height="36" Name="工资" Padding="0" BorderThickness="0" Click="button_Click">
                         <Button.Content>
@@ -74,6 +76,7 @@
                     </Button>
                 </Border>
 
+                <TextBlock Text="理财" Grid.Column="3" HorizontalAlignment="Center"  Margin="0,35,0,35"></TextBlock>
                 <Border Grid.Column="3" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
                     <Button HorizontalAlignment="Center" Width="36" Height="36" Name="理财" Padding="0" BorderThickness="0" Click="button_Click">
                         <Button.Content>
@@ -84,6 +87,7 @@
                     </Button>
                 </Border>
 
+                <TextBlock Text="福利" Grid.Column="4" HorizontalAlignment="Center"  Margin="0,35,0,35"></TextBlock>
                 <Border Grid.Column="4" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
                     <Button HorizontalAlignment="Center" Width="36" Height="36" Name="福利" Padding="0" BorderThickness="0" Click="button_Click">
                         <Button.Content>
@@ -94,11 +98,12 @@
                     </Button>
                 </Border>
 
+                <TextBlock Text="其他" Grid.Column="5" HorizontalAlignment="Center"  Margin="0,35,0,35"></TextBlock>
                 <Border Grid.Column="5" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
                     <Button HorizontalAlignment="Center" Width="36" Height="36" Name="其他收入" Padding="0" BorderThickness="0" Click="button_Click">
                         <Button.Content>
                             <Grid Background="White" Width="36" Height="36" >
-                                <Image Source="Assets/otherincome.png"/>
+                                <Image Source="Assets/other.png"/>
                             </Grid>
                         </Button.Content>
                     </Button>
@@ -121,6 +126,7 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="0.1*"/>
                     </Grid.ColumnDefinitions>
+                    <TextBlock Text="餐饮" Grid.Column="1" HorizontalAlignment="Center" Margin="-8"></TextBlock>
                     <Border Grid.Column="1" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
                         <Button HorizontalAlignment="Center" Width="36" Height="36" Name="餐饮"  Padding="0" BorderThickness="0" Click="button_Click">
                             <Button.Content>
@@ -131,6 +137,7 @@
                         </Button>
                     </Border>
 
+                    <TextBlock Text="交通" Grid.Column="2" HorizontalAlignment="Center" Margin="-8"></TextBlock>
                     <Border Grid.Column="2" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
                         <Button HorizontalAlignment="Center" Width="36" Height="36" Name="交通" Padding="0" BorderThickness="0" Click="button_Click">
                             <Button.Content>
@@ -141,6 +148,7 @@
                         </Button>
                     </Border>
 
+                    <TextBlock Text="购物" Grid.Column="3" HorizontalAlignment="Center" Margin="-8"></TextBlock>
                     <Border Grid.Column="3" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
                         <Button HorizontalAlignment="Center" Width="36" Height="36" Name="购物" Padding="0" BorderThickness="0" Click="button_Click">
                             <Button.Content>
@@ -151,6 +159,7 @@
                         </Button>
                     </Border>
 
+                    <TextBlock Text="医疗" Grid.Column="4" HorizontalAlignment="Center" Margin="-8"></TextBlock>
                     <Border Grid.Column="4" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
                         <Button HorizontalAlignment="Center" Width="36" Height="36" Name="医疗" Padding="0" BorderThickness="0" Click="button_Click">
                             <Button.Content>
@@ -161,6 +170,7 @@
                         </Button>
                     </Border>
 
+                    <TextBlock Text="旅行" Grid.Column="5" HorizontalAlignment="Center" Margin="-8"></TextBlock>
                     <Border Grid.Column="5" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
                         <Button HorizontalAlignment="Center" Width="36" Height="36" Name="旅行" Padding="0" BorderThickness="0" Click="button_Click">
                             <Button.Content>
@@ -183,6 +193,7 @@
                         <ColumnDefinition Width="0.1*"/>
                     </Grid.ColumnDefinitions>
 
+                    <TextBlock Text="娱乐" Grid.Column="1" HorizontalAlignment="Center" Margin="-8"></TextBlock>
                     <Border Grid.Column="1" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
                         <Button HorizontalAlignment="Center" Width="36" Height="36" Name="娱乐" Padding="0" BorderThickness="0" Click="button_Click">
                             <Button.Content>
@@ -193,6 +204,7 @@
                         </Button>
                     </Border>
 
+                    <TextBlock Text="社交" Grid.Column="2" HorizontalAlignment="Center" Margin="-8"></TextBlock>
                     <Border Grid.Column="2" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
                         <Button HorizontalAlignment="Center" Width="36" Height="36" Name="社交" Padding="0" BorderThickness="0" Click="button_Click">
                             <Button.Content>
@@ -203,6 +215,7 @@
                         </Button>
                     </Border>
 
+                    <TextBlock Text="投资" Grid.Column="3" HorizontalAlignment="Center" Margin="-8"></TextBlock>
                     <Border Grid.Column="3" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
                         <Button HorizontalAlignment="Center" Width="36" Height="36" Name="投资" Padding="0" BorderThickness="0" Click="button_Click">
                             <Button.Content>
@@ -213,6 +226,7 @@
                         </Button>
                     </Border>
 
+                    <TextBlock Text="教育" Grid.Column="4" HorizontalAlignment="Center" Margin="-8"></TextBlock>
                     <Border Grid.Column="4" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
                         <Button HorizontalAlignment="Center" Width="36" Height="36" Name="教育" Padding="0"  BorderThickness="0" Click="button_Click">
                             <Button.Content>
@@ -223,6 +237,7 @@
                         </Button>
                     </Border>
 
+                    <TextBlock Text="其他" Grid.Column="5" HorizontalAlignment="Center" Margin="-8"></TextBlock>
                     <Border Grid.Column="5" Width="60" Height="60" CornerRadius="30" BorderBrush="LightGray" BorderThickness="3">
                         <Button HorizontalAlignment="Center" Width="36" Height="36" Name="其他" Padding="0" BorderThickness="0" Click="button_Click">
                             <Button.Content>
@@ -240,7 +255,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="描述" Height="20" Width="50" Margin="-20,-40,350,180" ></TextBlock>
+                <TextBlock Text="描述" Height="20" Width="50" Margin="10,-40,350,180" ></TextBlock>
                 <TextBox Name="details" Height="200" Margin="30, 30, 30, 20" />
             </Grid>
 

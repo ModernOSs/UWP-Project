@@ -354,6 +354,9 @@
     <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\default.jpg">
       <PackagePath>Assets\default.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\bonus.png">
+      <PackagePath>Assets\bonus.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\contact.png">
       <PackagePath>Assets\contact.png</PackagePath>
     </AppxPackagedFile>
@@ -362,6 +365,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\example1.png">
       <PackagePath>Assets\example1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\financial.png">
+      <PackagePath>Assets\financial.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\food.png">
       <PackagePath>Assets\food.png</PackagePath>
@@ -378,6 +384,9 @@
     <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\other.png">
       <PackagePath>Assets\other.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\welfare.png">
+      <PackagePath>Assets\welfare.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\shopping.png">
       <PackagePath>Assets\shopping.png</PackagePath>
     </AppxPackagedFile>
@@ -392,6 +401,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\waterTank.png">
       <PackagePath>Assets\waterTank.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\salary.png">
+      <PackagePath>Assets\salary.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>

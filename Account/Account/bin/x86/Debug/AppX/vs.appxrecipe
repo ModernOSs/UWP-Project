@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-11T05:55:09.382</Modified>
+      <Modified>2016-05-11T06:56:25.515</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\bin\x86\Debug\Account.exe">
       <PackagePath>entrypoint\Account.exe</PackagePath>
-      <Modified>2016-05-11T05:55:08.496</Modified>
+      <Modified>2016-05-11T06:56:24.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shuqian\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -474,6 +474,10 @@
       <PackagePath>Assets\default.jpg</PackagePath>
       <Modified>2016-05-09T10:21:14.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\bonus.png">
+      <PackagePath>Assets\bonus.png</PackagePath>
+      <Modified>2016-05-11T06:08:15.687</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\contact.png">
       <PackagePath>Assets\contact.png</PackagePath>
       <Modified>2016-05-09T13:52:46.000</Modified>
@@ -485,6 +489,10 @@
     <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\example1.png">
       <PackagePath>Assets\example1.png</PackagePath>
       <Modified>2016-05-09T10:21:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\financial.png">
+      <PackagePath>Assets\financial.png</PackagePath>
+      <Modified>2016-05-11T06:08:15.737</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\food.png">
       <PackagePath>Assets\food.png</PackagePath>
@@ -506,6 +514,10 @@
       <PackagePath>Assets\other.png</PackagePath>
       <Modified>2016-05-09T13:52:46.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\welfare.png">
+      <PackagePath>Assets\welfare.png</PackagePath>
+      <Modified>2016-05-11T06:08:15.741</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\shopping.png">
       <PackagePath>Assets\shopping.png</PackagePath>
       <Modified>2016-05-09T13:52:46.000</Modified>
@@ -525,6 +537,10 @@
     <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\waterTank.png">
       <PackagePath>Assets\waterTank.png</PackagePath>
       <Modified>2016-05-09T10:22:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\salary.png">
+      <PackagePath>Assets\salary.png</PackagePath>
+      <Modified>2016-05-11T06:38:58.326</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -594,11 +610,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-05-11T05:55:09.063</Modified>
+      <Modified>2016-05-11T06:56:25.228</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shuqian\Desktop\UWP-Project\Account\Account\bin\x86\Debug\Core\Account.exe">
       <PackagePath>Account.exe</PackagePath>
-      <Modified>2016-05-11T05:55:09.378</Modified>
+      <Modified>2016-05-11T06:56:25.511</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
