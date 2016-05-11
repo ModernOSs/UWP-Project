@@ -8,6 +8,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -28,16 +29,27 @@ namespace Account
         public Login()
         {
             this.InitializeComponent();
+            var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
+            viewTitleBar.BackgroundColor = Color.FromArgb(0, 136, 214, 255);
+            viewTitleBar.ButtonBackgroundColor = Color.FromArgb(0, 136, 214, 255);
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
+            viewTitleBar.BackgroundColor = Color.FromArgb(0, 136, 214, 255);
+            viewTitleBar.ButtonBackgroundColor = Color.FromArgb(0, 136, 214, 255);
             if (e.NavigationMode == NavigationMode.New)
             {
                 if (ApplicationData.Current.RoamingSettings.Values.ContainsKey("username") &&
                     ApplicationData.Current.RoamingSettings.Values.ContainsKey("password"))
+                {
+                    auto.IsChecked = true;
+                    username.Text = (string)ApplicationData.Current.RoamingSettings.Values["username"];
+                    password.Password = (string)ApplicationData.Current.RoamingSettings.Values["password"];
                     tryLogin((string)ApplicationData.Current.RoamingSettings.Values["username"],
                              (string)ApplicationData.Current.RoamingSettings.Values["password"]);
+                }
             }
         }
 
@@ -59,10 +71,10 @@ namespace Account
                 httpClient.DefaultRequestHeaders.Add("username", username);
                 httpClient.DefaultRequestHeaders.Add("password", password);
                 progressBar.Opacity = 1;
-                // 发送POST请求
-                HttpResponseMessage response = await httpClient.PostAsync("http://119.29.232.29:3000", new StringContent(""));
-                // 确保返回值为成功状态
-                response.EnsureSuccessStatusCode();
+                //发送POST请求
+               HttpResponseMessage response = await httpClient.PostAsync("http://119.29.232.29:3000", new StringContent(""));
+                //确保返回值为成功状态
+                    response.EnsureSuccessStatusCode();
                 Byte[] getByte = await response.Content.ReadAsByteArrayAsync();
                 string returnContent = await response.Content.ReadAsStringAsync();
                 if (returnContent == "success")
@@ -83,12 +95,12 @@ namespace Account
                 {
                     progressBar.Opacity = 0;
                     loginErr.Text = "用户不存在";
-                }  
+                }
                 else
                 {
                     progressBar.Opacity = 0;
                     loginErr.Text = "用户名密码错误";
-                }  
+                }
             }
             catch (HttpRequestException ex1)
             {

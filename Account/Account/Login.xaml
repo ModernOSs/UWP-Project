@@ -21,7 +21,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <TextBlock Grid.Row="0" Width="200" Name="loginErr" Foreground="Red" HorizontalAlignment="Center" TextAlignment="Center" VerticalAlignment="Bottom" Height="40"/>
-            <ProgressBar Grid.Row="0" x:Name="progressBar" IsIndeterminate="True" Opacity="0" HorizontalAlignment="Center"  VerticalAlignment="Bottom"  Width="300" Height="40"/>
+            <ProgressRing Grid.Row="0" x:Name="progressBar" Opacity="0" HorizontalAlignment="Center"  VerticalAlignment="Bottom" IsActive="True" Width="200" Height="60"/>
             <Grid Grid.Row="1">
                 <AppBarButton Icon="Contact" Height="48" Width="48" VerticalAlignment="Center" Margin="-248, 0, 0, 0" HorizontalAlignment="Center"/>
                 <TextBox PlaceholderText="请输入您的账户" Width="300" Height="48" x:Name="username" Margin="0,16,0,16" Padding="54, 12, 12, 0"/>

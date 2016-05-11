@@ -24,11 +24,11 @@ namespace Account.Common
                     return UrlToImageSource("/Assets/education.png");
                 case Models.kind.food:
                     return UrlToImageSource("/Assets/food.png");
-                case Models.kind.fun:
+                case Models.kind.entertainment:
                     return UrlToImageSource("/Assets/fun.png");
                 case Models.kind.medical:
                     return UrlToImageSource("/Assets/medical.png");
-                case Models.kind.money:
+                case Models.kind.investment:
                     return UrlToImageSource("/Assets/money.png");
                 case Models.kind.other:
                     return UrlToImageSource("/Assets/other.png");
@@ -38,6 +38,16 @@ namespace Account.Common
                     return UrlToImageSource("/Assets/traffic.png");
                 case Models.kind.travel:
                     return UrlToImageSource("/Assets/travel.png");
+                case Models.kind.bonus:
+                    return UrlToImageSource("/Assets/bonus.png");
+                case Models.kind.salary:
+                    return UrlToImageSource("/Assets/salary.png");
+                case Models.kind.welfare:
+                    return UrlToImageSource("/Assets/welfare.png");
+                case Models.kind.financial:
+                    return UrlToImageSource("/Assets/financial.png");
+                case Models.kind.otherincome:
+                    return UrlToImageSource("/Assets/other.png");
                 default:
                     return UrlToImageSource("/Assets/other.png");
             }

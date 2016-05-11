@@ -28,13 +28,18 @@
                     <AppBarButton x:Name="selectBtn" Icon="Pictures" Label="select" RelativePanel.AlignRightWithPanel="True" Margin="0" Click="selectBtn_Click" />
                 </RelativePanel>
 
-                <TextBox x:Name="name" Width="300" Header="目标名" MaxLength="15"/>
-                <TextBox x:Name="description" Width="300" Header="目标描述" Height="96" Margin="0,0,0,5" TextWrapping="Wrap" MaxLength="100"/>
+                <TextBox x:Name="name" Width="300" Header="目标名" />
+                <TextBox x:Name="description" Width="300" Header="目标描述" Height="96" Margin="0,0,0,20" />
 
-                <RelativePanel Width="300">
-                    <Button x:Name="createBtn" Content="创建" Click="createBtn_Click" Visibility="Visible" />
-                    <Button x:Name="cancelBtn" Content="取消" RelativePanel.AlignRightWithPanel="True" Click="cancelBtn_Click" />
-                </RelativePanel>
+                <Grid Width="400">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="createBtn" Grid.Column="0" Height="40" Width="100" Content="创建" Click="createBtn_Click" Visibility="Visible" Margin="0,20,0,20" HorizontalAlignment="Center"/>
+                    <Button x:Name="cancelBtn" Grid.Column="1" Height="40" Width="100" Content="取消" Click="cancelBtn_Click" Margin="0,20,0,20" HorizontalAlignment="Center"/>
+                </Grid>
+
             </StackPanel>
         </ScrollViewer>
     </Grid>
