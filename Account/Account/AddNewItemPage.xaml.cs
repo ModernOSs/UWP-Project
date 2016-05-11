@@ -32,6 +32,7 @@ namespace Account
         Models.kind kind;
         Models.IncomesList incomesList { set; get; }
         DateTimeOffset OfficialDate;
+
         public AddNewItemPage()
         {
             this.InitializeComponent();
@@ -40,7 +41,7 @@ namespace Account
             viewTitleBar.BackgroundColor = Windows.UI.Colors.LightGray;
             viewTitleBar.ButtonBackgroundColor = Windows.UI.Colors.LightGray;
             NavigationCacheMode = NavigationCacheMode.Enabled;
-            OfficialDate = DateTimeOffset.Now;
+            date.Date = DateTimeOffset.Now;
             //Initialize selector
             selector.Items.Add("支出");
             selector.Items.Add("收入");

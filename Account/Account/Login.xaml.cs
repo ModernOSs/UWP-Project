@@ -8,6 +8,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -28,10 +29,16 @@ namespace Account
         public Login()
         {
             this.InitializeComponent();
+            var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
+            viewTitleBar.BackgroundColor = Color.FromArgb(0, 136, 214, 255);
+            viewTitleBar.ButtonBackgroundColor = Color.FromArgb(0, 136, 214, 255);
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
+            viewTitleBar.BackgroundColor = Color.FromArgb(0, 136, 214, 255);
+            viewTitleBar.ButtonBackgroundColor = Color.FromArgb(0, 136, 214, 255);
             if (e.NavigationMode == NavigationMode.New)
             {
                 if (ApplicationData.Current.RoamingSettings.Values.ContainsKey("username") &&
