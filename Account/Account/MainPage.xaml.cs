@@ -41,7 +41,6 @@ namespace Account
 
         private async void initializeData()
         {
-            await App.download();
             this.incomesList = App.user.incomesList;
             this.goalsList = App.user.goalsList;
             double incomes = 0, outcomes = 0, todayOutcomes = 0, todayIncomes = 0;

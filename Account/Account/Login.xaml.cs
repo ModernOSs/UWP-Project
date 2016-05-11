@@ -89,6 +89,7 @@ namespace Account
                     {
                         ApplicationData.Current.RoamingSettings.Values.Clear();
                     }
+                    await App.download();
                     Frame.Navigate(typeof(MainPage));
                 }
                 else if (returnContent == "no user")
