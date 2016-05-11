@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace Account.Models
 {
     public class User
     {
-        private string username;
+        public string username;
         private string password;
         public IncomesList incomesList;
         public GoalsList goalsList;
@@ -24,17 +25,6 @@ namespace Account.Models
             goalsList = new GoalsList();
             incomesList.addIncome(kind.food, "火锅", 120.5, new DateTime(2016, 5, 3), "支出");
             incomesList.addIncome(kind.entertainment, "唱K", 30, new DateTime(2016, 5, 3), "支出");
-           
-        }
-
-        public void addIncome(kind kind, string source, double amount, DateTimeOffset date, string inOrOut)
-        {
-            incomesList.addIncome(kind, source, amount, date, inOrOut);
-        }
-
-        public void removeIncome(int id)
-        {
-            incomesList.removeIncome(id);
         }
     }
 }

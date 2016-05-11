@@ -36,14 +36,16 @@ namespace Account
             viewTitleBar.BackgroundColor = Color.FromArgb(0, 136, 214, 255);
             viewTitleBar.ButtonBackgroundColor = Color.FromArgb(0, 136, 214, 255);
 
-            this.incomesList = App.user.incomesList;
-            this.goalsList = App.user.goalsList;
             initializeData();
         }
 
-        private void initializeData()
+        private async void initializeData()
         {
+            await App.download();
+            this.incomesList = App.user.incomesList;
+            this.goalsList = App.user.goalsList;
             double incomes = 0, outcomes = 0, todayOutcomes = 0, todayIncomes = 0;
+            Debug.WriteLine(incomesList.AllIncomes.Count);
             for (int i = 0; i < incomesList.AllIncomes.Count; i++)
             {
                 if (incomesList.AllIncomes.ToArray()[i].date.Month == DateTimeOffset.Now.Month)
@@ -126,6 +128,13 @@ namespace Account
                 Frame.Navigate(typeof(GoalsPage));
             else if (pageName == "添加目标")
                 Frame.Navigate(typeof(AddGoal));
+            else
+                Frame.Navigate(typeof(MainPage));
+        }
+
+        private void homeButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
         }
     }
 }

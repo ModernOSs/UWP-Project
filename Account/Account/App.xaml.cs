@@ -15,6 +15,13 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Newtonsoft;
+using Newtonsoft.Json;
+using System.Net.Http;
+using System.Diagnostics;
+using System.Text;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
 
 namespace Account
 {
@@ -133,6 +140,59 @@ namespace Account
             var deferral = e.SuspendingOperation.GetDeferral();
             //TODO: 保存应用程序状态并停止任何后台活动
             deferral.Complete();
+        }
+
+        public static async void upload()
+        {
+            try
+            {
+                HttpClient httpClient = new HttpClient();
+                httpClient.DefaultRequestHeaders.Add("username", user.username);
+                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/x-www-form-urlencoded"));
+                //发送POST请求
+                HttpResponseMessage response = await httpClient.PostAsync("http://119.29.232.29:3000/update",
+                                       new StringContent(JsonConvert.SerializeObject(user), Encoding.UTF8, "application/json"));
+                //确保返回值为成功状态
+                response.EnsureSuccessStatusCode();
+                Byte[] getByte = await response.Content.ReadAsByteArrayAsync();
+                string returnContent = await response.Content.ReadAsStringAsync();
+                Debug.WriteLine(returnContent);
+            }
+            catch (HttpRequestException ex1)
+            {
+                Debug.WriteLine(ex1.ToString());
+            }
+            catch (Exception ex2)
+            {
+                Debug.WriteLine(ex2.ToString());
+            }
+        }
+
+        public static async Task<string> download()
+        {
+            try
+            {
+                HttpClient httpClient = new HttpClient();
+                httpClient.DefaultRequestHeaders.Add("username", user.username);
+                //发送POST请求
+                HttpResponseMessage response = await httpClient.PostAsync("http://119.29.232.29:3000/download", new StringContent(""));
+                //确保返回值为成功状态
+                response.EnsureSuccessStatusCode();
+                Byte[] getByte = await response.Content.ReadAsByteArrayAsync();
+                string returnContent = await response.Content.ReadAsStringAsync();
+                Debug.WriteLine(returnContent);
+                if (returnContent != "failed")
+                    user = JsonConvert.DeserializeObject<Models.User>(returnContent);
+            }
+            catch (HttpRequestException ex1)
+            {
+                Debug.WriteLine(ex1.ToString());
+            }
+            catch (Exception ex2)
+            {
+                Debug.WriteLine(ex2.ToString());
+            }
+            return "Finished";
         }
     }
 }
