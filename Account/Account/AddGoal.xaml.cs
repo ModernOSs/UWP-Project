@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text.RegularExpressions;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
@@ -108,7 +109,8 @@ namespace Account
             string[] errInfo = { "目标名称不能为空\n",
                                  "目标描述不能为空\n",
                                  "目标价格不能为空\n",
-                                 "完成日期不能早于今天\n" };
+                                 "完成日期不能早于今天\n",
+                                 "目标价格不合法"};
             string err = "";
             if (name.Text == "")
             {
@@ -125,6 +127,14 @@ namespace Account
             if (dueTime.Date < DateTime.Today)
             {
                 err += errInfo[3];
+            }
+            try
+            {
+                Convert.ToDouble(price.Text);
+            }
+            catch (Exception e)
+            {
+                err += errInfo[4];
             }
             return err;
         }
