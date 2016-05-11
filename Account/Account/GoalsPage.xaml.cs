@@ -59,9 +59,9 @@ namespace Account
 
         private void finish_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
-            //(sender as SymbolIcon).Visibility = Visibility.Collapsed;
+            (sender as SymbolIcon).Visibility = Visibility.Collapsed;
             goalsList.finishGoal();
-            goalsList.removeGoal((sender as SymbolIcon).Tag.ToString());
+            //goalsList.removeGoal((sender as SymbolIcon).Tag.ToString());
             Frame.Navigate(typeof(GoalsPage));
         }
 

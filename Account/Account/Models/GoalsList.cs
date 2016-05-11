@@ -24,7 +24,8 @@ namespace Account.Models
         public void addGoal(string name, double price, DateTimeOffset dueTime, string description, string imageName, BitmapImage bitmapImageSource)
         {
             goalCount++;
-            AllGoals.Add(new Goal(name, price, dueTime, description, imageName, bitmapImageSource));
+            AllGoals.Insert(0, new Goal(name, price, dueTime, description, imageName, bitmapImageSource));
+            //AllGoals.Add(new Goal(name, price, dueTime, description, imageName, bitmapImageSource));
         }
 
         public void removeGoal(string id)
@@ -34,6 +35,7 @@ namespace Account.Models
                 if (AllGoals[i].getId() == id)
                 {
                     goalCount--;
+                    finishedGoalCount--;
                     AllGoals.RemoveAt(i);
                     break;
                 }
