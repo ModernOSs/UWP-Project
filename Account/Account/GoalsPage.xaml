@@ -84,7 +84,7 @@
                                         <RowDefinition Height="0.382*"/>
                                         <RowDefinition Height="0.618*"/>
                                     </Grid.RowDefinitions>
-                                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0" Text="{x:Bind name}" FontSize="24" Foreground="Gray" FontWeight="SemiBold" Name="goalName"/>
+                                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0" Text="{x:Bind goalName}" FontSize="24" Foreground="Gray" FontWeight="SemiBold" Name="goalName"/>
                                     <Grid Grid.Row="1">
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="0.618*"/>

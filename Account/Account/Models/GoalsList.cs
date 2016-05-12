@@ -35,7 +35,7 @@ namespace Account.Models
                 if (AllGoals[i].getId() == id)
                 {
                     goalCount--;
-                    finishedGoalCount--;
+                    if (AllGoals[i].finished == true) finishedGoalCount--;
                     AllGoals.RemoveAt(i);
                     break;
                 }
@@ -69,16 +69,28 @@ namespace Account.Models
             }
             if (i == AllGoals.Count) return "";
 
-            string returnName = AllGoals[i].name;
+            string returnName = AllGoals[i].goalName;
             for (i = 0; i < AllGoals.Count; ++i)
             {
                 if (AllGoals[i].finished == false && AllGoals[i].dueTime < minTime)
                 {
                     minTime = AllGoals[i].dueTime;
-                    returnName = AllGoals[i].name;
+                    returnName = AllGoals[i].goalName;
                 }
             }
             return returnName;
+        }
+
+        public Goal getFirstUnfinishedGoal()
+        {
+            for (int i = 0; i < AllGoals.Count; ++i)
+            {
+                if (AllGoals[i].finished == false)
+                {
+                    return AllGoals[i];
+                }
+            }
+            return null;
         }
     }
 }

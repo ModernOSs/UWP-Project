@@ -22,6 +22,8 @@ using System.Diagnostics;
 using System.Text;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using NotificationsExtensions.Tiles;
+using Windows.UI.Notifications;
 
 namespace Account
 {
@@ -193,6 +195,40 @@ namespace Account
                 Debug.WriteLine(ex2.ToString());
             }
             return "Finished";
+        }
+
+        public static void UpdateTile(TileBindingContentAdaptive tileContent, int tileStyle)
+        {
+            //  tileStyle == 0  ->  中磁贴
+            //  tileStyle == 1  ->  宽磁贴
+            TileContent content;
+            if (tileStyle == 0)
+            {
+                content = new TileContent()
+                {
+                    Visual = new TileVisual()
+                    {
+                        TileMedium = new TileBinding()
+                        {
+                            Content = tileContent
+                        }
+                    }
+                };
+            }
+            else
+            {
+                content = new TileContent()
+                {
+                    Visual = new TileVisual()
+                    {
+                        TileWide = new TileBinding()
+                        {
+                            Content = tileContent
+                        }
+                    }
+                };
+            }
+            TileUpdateManager.CreateTileUpdaterForApplication().Update(new TileNotification(content.GetXml()));
         }
     }
 }

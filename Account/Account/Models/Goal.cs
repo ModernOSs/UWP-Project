@@ -10,7 +10,7 @@ namespace Account.Models
     public class Goal
     {
         public string id;
-        public string name;
+        public string goalName;
         public double price;
         public DateTimeOffset dueTime;
         public string description;
@@ -21,7 +21,7 @@ namespace Account.Models
         public Goal(string name, double price, DateTimeOffset dueTime, string description, string imageName, BitmapImage bitmapImageSource)
         {
             this.id = Guid.NewGuid().ToString();
-            this.name = name;
+            this.goalName = name;
             this.price = price;
             this.dueTime = dueTime;
             this.description = description;
