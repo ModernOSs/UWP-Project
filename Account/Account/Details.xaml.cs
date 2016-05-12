@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NotificationsExtensions.Tiles;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -6,6 +7,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI;
+using Windows.UI.Notifications;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -54,6 +56,7 @@ namespace Account
             var viewTitleBar = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().TitleBar;
             viewTitleBar.BackgroundColor = Color.FromArgb(0, 136, 214, 255);
             viewTitleBar.ButtonBackgroundColor = Color.FromArgb(0, 136, 214, 255);
+            UpdateTiles();
         }
 
         private void LoadChartContents()
@@ -211,6 +214,48 @@ namespace Account
         private void homeButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MainPage));
+        }
+
+        // 磁贴更新----收支
+        private void UpdateTiles()
+        {
+            double incomes = 0, outcomes = 0;
+            for (int i = 0; i < incomesList.AllIncomes.Count; i++)
+            {
+                if (incomesList.AllIncomes.ToArray()[i].date.Month == DateTimeOffset.Now.Month)
+                {
+                    if (incomesList.AllIncomes.ToArray()[i].inOrOut == "支出")
+                        outcomes += incomesList.AllIncomes.ToArray()[i].amount;
+                    else
+                        incomes += incomesList.AllIncomes.ToArray()[i].amount;
+                }
+            }
+            App.UpdateTile(new TileBindingContentAdaptive()
+            {
+                Children =
+                    {
+                        new TileText()
+                        {
+                            Text = "本月支出",
+                            Style = TileTextStyle.CaptionSubtle
+                        },
+                        new TileText()
+                        {
+                            Text = outcomes.ToString() + "元",
+                            Style = TileTextStyle.Caption
+                        },
+                        new TileText()
+                        {
+                            Text = "本月收入",
+                            Style = TileTextStyle.CaptionSubtle
+                        },
+                        new TileText()
+                        {
+                            Text =  incomes.ToString() + "元",
+                            Style = TileTextStyle.Caption
+                        }
+                    }
+            }, 0);
         }
     }
 }

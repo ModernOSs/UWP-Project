@@ -1,10 +1,12 @@
-﻿using System;
+﻿using NotificationsExtensions.Tiles;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Notifications;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -45,6 +47,9 @@ namespace Account
 
             goalCount.Text = goalsList.goalCount.ToString();
             finishedGoalCount.Text = goalsList.finishedGoalCount.ToString();
+
+            //更新磁贴
+            UpdateWideTile();
         }
 
         private void addGoalButton_Click(object sender, RoutedEventArgs e)
@@ -60,7 +65,7 @@ namespace Account
         private void finish_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
             (sender as SymbolIcon).Visibility = Visibility.Collapsed;
-            goalsList.finishGoal();
+            goalsList.finishGoal((sender as SymbolIcon).Tag.ToString());
             //goalsList.removeGoal((sender as SymbolIcon).Tag.ToString());
             Frame.Navigate(typeof(GoalsPage));
         }
@@ -92,7 +97,6 @@ namespace Account
             Frame.Navigate(typeof(AddNewItemPage));
         }
 
-
         private void navigation_ItemClick(object sender, ItemClickEventArgs e)
         {
             Grid e_ = (Grid)e.ClickedItem;
@@ -112,6 +116,50 @@ namespace Account
         private void homeButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MainPage));
+        }
+
+        // 磁贴更新----goalslist
+        private void UpdateWideTile()
+        {
+            Models.Goal firstUnfinishedGoal = goalsList.getFirstUnfinishedGoal();
+            if (firstUnfinishedGoal != null)
+            {
+                App.UpdateTile(new TileBindingContentAdaptive()
+                {
+                    Children =
+                    {
+                        new TileText()
+                        {
+                            Text = "最新目标",
+                            Style = TileTextStyle.SubtitleSubtle
+                        },
+                        new TileText()
+                        {
+                            Text = firstUnfinishedGoal.goalName,
+                            Style = TileTextStyle.Subtitle
+                        },
+                        //new TileText()
+                        //{
+                        //    Text = firstUnfinishedGoal.description,
+                        //    Style = TileTextStyle.CaptionSubtle
+                        //},
+                        new TileText()
+                        {
+                            Text = firstUnfinishedGoal.dueTime.ToString("yyyy/MM/dd dddd"),
+                            Style = TileTextStyle.CaptionSubtle
+                        }
+                        //new TileImage()
+                        //{
+                        //    Source = new TileImageSource("ms-appdata:///local/Projects/03509dce-9bf3-47c8-be42-7cd32ce458b4/Slides/" + firstUnfinishedGoal.imageName),
+                        //    Align = TileImageAlign.Left
+                        //}
+                    }
+                }, 1);
+            }
+            else
+            {
+                TileUpdateManager.CreateTileUpdaterForApplication().Clear();
+            }
         }
     }
 }
