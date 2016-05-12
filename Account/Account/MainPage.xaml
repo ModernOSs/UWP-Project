@@ -15,6 +15,7 @@
         <Grid x:Name="splitViewGrid" Grid.Column="0">
             <StackPanel Background="#F2F2F2">
                 <Button x:Name="splitViewButton" Click="splitViewButton_Click" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" FontSize="20" VerticalAlignment="Top" Width="48" Height="48" Background="#E6E6E6"/>
+                <AppBarButton IsCompact="True" Width="48" x:Name="homeButton" Icon="Home" Click="homeButton_Click"/>
                 <AppBarButton IsCompact="True" Width="48" x:Name="detailsButton" Icon="ZeroBars" Click="detailsButton_Click"/>
                 <AppBarButton IsCompact="True" Width="48" x:Name="addNewItemButton" Icon="AllApps" Click="addNewItemButton_Click"/>
                 <AppBarButton IsCompact="True" Width="48" x:Name="goalsButton" Icon="OutlineStar" Click="goalsButton_Click"/>
@@ -109,9 +110,8 @@
             <Grid Grid.Row="3" Margin="4, 0, 4, 0">
                 <ScrollViewer >
                     <ListView>
-                        <ListViewItem Content="余额不足20%，要剁手啦"/>
-                        <ListViewItem Content="本月余额还剩40%，要注意节约哦"/>
-                        <ListViewItem Content="目标 购买自行车 还没完成，去给它攥点钱吧"/>
+                        <ListViewItem x:Name="tips"/>
+                        <ListViewItem x:Name="goal"/>
                     </ListView>
                 </ScrollViewer>
             </Grid>
@@ -123,6 +123,16 @@
                         <Button Margin="8, 0, 8, 0" Click="splitViewButton_Click" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" FontSize="20" VerticalAlignment="Top" Width="48" Height="48" Background="#E6E6E6"/>
                     </Grid>
                     <ListView x:Name="navigation" IsItemClickEnabled="True" ItemClick="navigation_ItemClick">
+                        <ListViewItem>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <AppBarButton IsCompact="True" VerticalAlignment="Center" Grid.Column="0" IsHitTestVisible="False" Width="48" Icon="Home"/>
+                                <TextBlock Width="112" TextAlignment="Center" Grid.Column="1" Text="主页" VerticalAlignment="Center"/>
+                            </Grid>
+                        </ListViewItem>
                         <ListViewItem>
                             <Grid>
                                 <Grid.ColumnDefinitions>

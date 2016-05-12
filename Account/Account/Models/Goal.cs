@@ -16,6 +16,7 @@ namespace Account.Models
         public string description;
         public string imageName;
         public BitmapImage bitmapImageSource;
+        public bool finished;
 
         public Goal(string name, double price, DateTimeOffset dueTime, string description, string imageName, BitmapImage bitmapImageSource)
         {
@@ -26,6 +27,7 @@ namespace Account.Models
             this.description = description;
             this.imageName = imageName;
             this.bitmapImageSource = bitmapImageSource;
+            this.finished = false;
         }
 
         public string getId()

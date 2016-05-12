@@ -42,9 +42,43 @@ namespace Account.Models
             }
         }
 
-        public void finishGoal()
+        public void finishGoal(string id)
         {
-            finishedGoalCount++;
+            for (int i = 0; i < AllGoals.Count; ++i)
+            {
+                if (AllGoals[i].getId() == id)
+                {
+                    AllGoals[i].finished = true;
+                    finishedGoalCount++;
+                    break;
+                }
+            }
+        }
+
+        public string nameOfFirstUnfinishedGoal()
+        {
+            int i = 0;
+            DateTimeOffset minTime;
+            for (i = 0; i < AllGoals.Count; ++i)
+            {
+                if (AllGoals[i].finished == false)
+                {
+                    minTime = AllGoals[i].dueTime;
+                    break;
+                }
+            }
+            if (i == AllGoals.Count) return "";
+
+            string returnName = AllGoals[i].name;
+            for (i = 0; i < AllGoals.Count; ++i)
+            {
+                if (AllGoals[i].finished == false && AllGoals[i].dueTime < minTime)
+                {
+                    minTime = AllGoals[i].dueTime;
+                    returnName = AllGoals[i].name;
+                }
+            }
+            return returnName;
         }
     }
 }

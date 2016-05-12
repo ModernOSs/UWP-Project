@@ -204,6 +204,13 @@ namespace Account
                 Frame.Navigate(typeof(GoalsPage));
             else if (pageName == "添加目标")
                 Frame.Navigate(typeof(AddGoal));
+            else
+                Frame.Navigate(typeof(MainPage));
+        }
+
+        private void homeButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
         }
     }
 }
