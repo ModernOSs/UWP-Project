@@ -9,10 +9,11 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="48"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Grid x:Name="splitViewGrid" Grid.Column="0">
+        <Grid x:Name="splitViewGrid" Grid.Column="1">
             <StackPanel Background="#F2F2F2">
                 <Button x:Name="splitViewButton" Click="splitViewButton_Click" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" FontSize="20" VerticalAlignment="Top" Width="48" Height="48" Background="#E6E6E6"/>
                 <AppBarButton IsCompact="True" Width="48" x:Name="homeButton" Icon="Home" Click="homeButton_Click"/>
@@ -22,7 +23,7 @@
                 <AppBarButton IsCompact="True" Width="48" x:Name="addGoalButton" Icon="Bullets" Click="addGoalButton_Click"/>
             </StackPanel>
         </Grid>
-        <Grid Grid.Column="1">
+        <Grid Grid.Column="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="440"/>
                 <RowDefinition Height="auto"/>
@@ -116,7 +117,7 @@
                 </ScrollViewer>
             </Grid>
         </Grid>
-        <SplitView Grid.Column="0" Grid.ColumnSpan="2" x:Name="mySplit" DisplayMode="CompactOverlay" CompactPaneLength="0" OpenPaneLength="200" IsPaneOpen="False" >
+        <SplitView Grid.Column="1" Grid.ColumnSpan="2" x:Name="mySplit" DisplayMode="CompactOverlay" CompactPaneLength="0" OpenPaneLength="200" >
             <SplitView.Pane>
                 <StackPanel Background="#F2F2F2">
                     <Grid Background="#E6E6E6">
@@ -177,5 +178,90 @@
                 </StackPanel>
             </SplitView.Pane>
         </SplitView>
+        <SplitView Visibility="Collapsed" Grid.Column="0" x:Name="mySplit_" DisplayMode="Inline" CompactPaneLength="0" OpenPaneLength="200" IsPaneOpen="True">
+            <SplitView.Pane>
+                <StackPanel Background="#F2F2F2">
+                    <Grid Background="#E6E6E6">
+                        <Button Margin="8, 0, 8, 0" Click="splitViewButton_Click" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" FontSize="20" VerticalAlignment="Top" Width="48" Height="48" Background="#E6E6E6"/>
+                    </Grid>
+                    <ListView IsItemClickEnabled="True" ItemClick="navigation_ItemClick">
+                        <ListViewItem>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <AppBarButton IsCompact="True" VerticalAlignment="Center" Grid.Column="0" IsHitTestVisible="False" Width="48" Icon="Home"/>
+                                <TextBlock Width="112" TextAlignment="Center" Grid.Column="1" Text="主页" VerticalAlignment="Center"/>
+                            </Grid>
+                        </ListViewItem>
+                        <ListViewItem>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <AppBarButton IsCompact="True" VerticalAlignment="Center" Grid.Column="0" IsHitTestVisible="False" Width="48" Icon="ZeroBars"/>
+                                <TextBlock Width="112" TextAlignment="Center" Grid.Column="1" Text="收支详情" VerticalAlignment="Center"/>
+                            </Grid>
+                        </ListViewItem>
+                        <ListViewItem>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <AppBarButton IsCompact="True" VerticalAlignment="Center" Grid.Column="0" IsHitTestVisible="False" Width="48" Icon="AllApps"/>
+                                <TextBlock Width="112" TextAlignment="Center" Grid.Column="1" Text="添加收支" VerticalAlignment="Center"/>
+                            </Grid>
+                        </ListViewItem>
+                        <ListViewItem>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <AppBarButton IsCompact="True" VerticalAlignment="Center" Grid.Column="0" IsHitTestVisible="False" Width="48" Icon="OutlineStar"/>
+                                <TextBlock Width="112" TextAlignment="Center" Grid.Column="1" Text="目标详情" VerticalAlignment="Center"/>
+                            </Grid>
+                        </ListViewItem>
+                        <ListViewItem>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <AppBarButton IsCompact="True" VerticalAlignment="Center" Grid.Column="0" IsHitTestVisible="False" Width="48" Icon="Bullets"/>
+                                <TextBlock Width="112" TextAlignment="Center" Grid.Column="1" Text="添加目标" VerticalAlignment="Center"/>
+                            </Grid>
+                        </ListViewItem>
+                    </ListView>
+                </StackPanel>
+            </SplitView.Pane>
+        </SplitView>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="768" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="splitViewGrid.Width" Value="0"/>
+                        <Setter Target="mySplit.Visibility" Value="Collapsed" />
+                        <Setter Target="mySplit_.Visibility" Value="Visible" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="splitViewGrid.Width" Value="48"/>
+                        <Setter Target="mySplit_.Visibility" Value="Collapsed" />
+                        <Setter Target="mySplit.Visibility" Value="Visible" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
     </Grid>
 </Page>

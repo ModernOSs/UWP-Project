@@ -107,7 +107,8 @@ namespace Account
 
         private void splitViewButton_Click(object sender, RoutedEventArgs e)
         {
-            mySplit.IsPaneOpen = !mySplit.IsPaneOpen;
+            if (Window.Current.Bounds.Width < 768)
+                mySplit.IsPaneOpen = !mySplit.IsPaneOpen;
         }
 
         private void detailsButton_Click(object sender, RoutedEventArgs e)
