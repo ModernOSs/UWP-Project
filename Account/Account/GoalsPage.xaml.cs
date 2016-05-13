@@ -5,9 +5,12 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Notifications;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -67,7 +70,18 @@ namespace Account
         {
             (sender as SymbolIcon).Visibility = Visibility.Collapsed;
             goalsList.finishGoal((sender as SymbolIcon).Tag.ToString());
-            //goalsList.removeGoal((sender as SymbolIcon).Tag.ToString());
+            //  分享
+            string id = (sender as SymbolIcon).Tag.ToString();
+            for (int i = 0; i < goalsList.AllGoals.Count; ++i)
+            {
+                if (goalsList.AllGoals[i].id == id)
+                {
+                    goalsList.sharedGoal = goalsList.AllGoals[i];
+                    break;
+                }
+            }
+            DataTransferManager.ShowShareUI();
+
             Frame.Navigate(typeof(GoalsPage));
         }
 
@@ -76,6 +90,25 @@ namespace Account
             goalsList.removeGoal((sender as SymbolIcon).Tag.ToString());
             App.upload();
             Frame.Navigate(typeof(GoalsPage));
+        }
+
+        private void DataTransferManager_DataRequested(DataTransferManager sender, DataRequestedEventArgs args)
+        {
+            var deferral = args.Request.GetDeferral();
+            //args.Request.Data.Properties.Title = goalsList.sharedGoal.goalName;
+            //args.Request.Data.SetText(goalsList.sharedGoal.description);
+            //if (sharedGoal.imageName == "default.jpg")
+            //{
+            //    args.Request.Data.SetBitmap(Windows.Storage.Streams.RandomAccessStreamReference.CreateFromUri(sharedGoal.bitmapImageSource.UriSource));
+            //}
+            //else
+            //{
+            //    StorageFile file = await ApplicationData.Current.LocalFolder.GetFileAsync(sharedGoal.imageName);
+            //    var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
+            //    args.Request.Data.SetBitmap(Windows.Storage.Streams.RandomAccessStreamReference.CreateFromStream(stream));
+            //}
+            deferral.Complete();
+            goalsList.sharedGoal = null;
         }
 
         private void goalsButton_Click(object sender, RoutedEventArgs e)

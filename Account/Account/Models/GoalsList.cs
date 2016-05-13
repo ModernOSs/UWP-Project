@@ -14,11 +14,13 @@ namespace Account.Models
         public ObservableCollection<Goal> AllGoals { get { return allGoals; } set { allGoals = value; } }
         public int goalCount;
         public int finishedGoalCount;
+        public Goal sharedGoal;
 
         public GoalsList()
         {
             goalCount = 0;
             finishedGoalCount = 0;
+            sharedGoal = null;
         }
 
         public void addGoal(string name, double price, DateTimeOffset dueTime, string description, string imageName, BitmapImage bitmapImageSource)
