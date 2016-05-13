@@ -11,6 +11,7 @@
 
     <Page.Resources>
         <common:DateFomatterConverter x:Key="DateFomatterConverter" />
+        <common:FinishIconConverter x:Key="FinishIconConverter" />
     </Page.Resources>
 
     <Page.BottomAppBar>
@@ -75,7 +76,7 @@
                                             <RowDefinition Height="*"/>
                                             <RowDefinition Height="*"/>
                                         </Grid.RowDefinitions>
-                                        <SymbolIcon Name="finish" Grid.Row="0" Height="36" Width="36" VerticalAlignment="Center" HorizontalAlignment="Center" Symbol="Accept" PointerPressed="finish_PointerPressed" Tag="{x:Bind id}"/>
+                                        <SymbolIcon Name="finish" Grid.Row="0" Height="36" Width="36" VerticalAlignment="Center" HorizontalAlignment="Center" Symbol="Accept" PointerPressed="finish_PointerPressed" Tag="{x:Bind id}" Visibility="{x:Bind finished, Converter={StaticResource FinishIconConverter}, Mode=TwoWay}"/>
                                         <SymbolIcon Name="delete" Grid.Row="1" Height="36" Width="36" VerticalAlignment="Center" HorizontalAlignment="Center" Symbol="Cancel" PointerPressed="delete_PointerPressed" Tag="{x:Bind id}"/>
                                     </Grid>
                                     <Grid Grid.Column="1">

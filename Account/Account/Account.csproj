@@ -105,6 +105,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Common\DateFomatterConverter.cs" />
+    <Compile Include="Common\FinishIconConverter.cs" />
     <Compile Include="Common\KindToImageSource.cs" />
     <Compile Include="Details.xaml.cs">
       <DependentUpon>Details.xaml</DependentUpon>
