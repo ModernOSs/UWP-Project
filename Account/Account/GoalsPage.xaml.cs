@@ -1,6 +1,7 @@
 ﻿using NotificationsExtensions.Tiles;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -14,6 +15,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Xaml.Shapes;
 
 // “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上提供
 
@@ -36,7 +38,6 @@ namespace Account
         }
 
         private Models.GoalsList goalsList { set; get; }
-
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {

@@ -38,6 +38,7 @@
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />
       <RootProperty Name="Value" />
+      <RootProperty Name="Target" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
       <RootProperty Name="TargetType" />
@@ -73,6 +74,8 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualState">
       <RootProperty Name="Storyboard" />
+      <RootProperty Name="StateTriggers" />
+      <RootProperty Name="Setters" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
       <RootProperty Name="Children" />
@@ -115,6 +118,7 @@
       <RootProperty Name="OpenPaneLength" />
       <RootProperty Name="IsPaneOpen" />
       <RootProperty Name="Pane" />
+      <RootProperty Name="Visibility" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Background" />
@@ -160,7 +164,6 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="Content" />
-      <RootProperty Name="HorizontalScrollBarVisibility" />
       <RootProperty Name="VerticalScrollBarVisibility" />
       <RootProperty Name="VerticalAlignment" />
     </RootType>
@@ -208,9 +211,12 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="IsTodayHighlighted" />
       <RootProperty Name="Width" />
+      <RootProperty Name="IsTodayHighlighted" />
       <RootEvent Name="DateChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.AdaptiveTrigger">
+      <RootProperty Name="MinWindowWidth" />
     </RootType>
     <RootType FullName="Account.AddGoal" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
@@ -270,6 +276,11 @@
     <RootType FullName="Account.Common.DateFomatterConverter" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Line">
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="X1" />
+      <RootProperty Name="Opacity" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
       <RootProperty Name="Name" />
