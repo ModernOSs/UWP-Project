@@ -239,6 +239,7 @@
     <RootType FullName="Account.Common.KindToImageSource" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
       <RootProperty Name="Converter" />
+      <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
@@ -274,6 +275,7 @@
     </RootType>
     <RootType FullName="Account.Details" />
     <RootType FullName="Account.Common.DateFomatterConverter" />
+    <RootType FullName="Account.Common.FinishIconConverter" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />
     </RootType>
@@ -290,6 +292,7 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Symbol" />
       <RootProperty Name="Tag" />
+      <RootProperty Name="Visibility" />
       <RootEvent Name="PointerPressed" />
     </RootType>
     <RootType FullName="Account.GoalsPage" />
